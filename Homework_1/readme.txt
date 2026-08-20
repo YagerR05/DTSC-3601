@@ -42,8 +42,8 @@ All screenshots are in the screenshots/ folder.
     colors.
 
 05_compare.jpg
-    Compare tab - radar chart comparing base stats for Rattata vs. Alolan
-    Rattata side by side (same stat distribution, different typing).
+    Compare tab - radar chart and stat table comparing base stats for
+    Charizard vs. Mewtwo, showing two clearly different stat profiles.
 
 06_explorer.jpg
     Explorer tab - searchable Pokedex table, showing "Rattata" search
