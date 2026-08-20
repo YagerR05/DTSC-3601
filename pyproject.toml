@@ -1,0 +1,14 @@
+[project]
+name = "pokemon-streamlit"
+version = "0.1.0"
+description = "Streamlit app exploring the Kaggle Complete Pokemon Dataset across generations"
+readme = "README.md"
+authors = [
+    { name = "Yager", email = "yagerrange@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "pandas>=3.0.5",
+    "plotly>=6.9.0",
+    "streamlit>=1.62.0",
+]
