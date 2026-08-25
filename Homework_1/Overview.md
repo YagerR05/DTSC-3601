@@ -12,16 +12,38 @@ Regional forms (Alolan, Galarian, Hisuian, Paldean) are included as separate row
 
 A handful of Pokemon in the original Gen 1–7 source had stats from an alternate form (Mega Evolution, Primal Reversion, regional form, battle form, etc.) instead of their standard base stats — these were audited against PokeAPI and corrected.
 
+## Architecture
+
+The dataset lives in a Supabase Postgres table (`pokemon`) and is read over the Supabase REST API, not from a local file. The app is deployed on [Modal](https://modal.com) as a `web_server` function running Streamlit, so anyone with the link can open it without running anything locally.
+
+**Live app:** https://yagerr05--pokedex-explorer-run.modal.run
+
 ## Setup
 
-Requires [uv](https://docs.astral.sh/uv/).
+Requires [uv](https://docs.astral.sh/uv/), a [Modal](https://modal.com) account, and a [Supabase](https://supabase.com) project.
+
+1. Copy `.env.example` to `.env` and fill in your Supabase project URL and publishable key (Project Settings -> API Keys). Never commit `.env`.
+2. Install dependencies and run locally:
+
+   ```bash
+   uv sync
+   uv run streamlit run app.py
+   ```
+
+### Loading the dataset into Supabase
+
+The `pokemon` table schema and a public-read RLS policy are created via SQL in the Supabase SQL Editor. `scripts/upload_to_supabase.py` reads `data/pokemon.csv` and bulk-inserts it into the table; that CSV is no longer part of the app or the repo (recoverable from git history if the table ever needs reseeding from scratch). To rerun it, restore the CSV to `data/`, set `SUPABASE_SECRET_KEY` in `.env`, and run:
 
 ```bash
-uv sync
-uv run streamlit run app.py
+uv run python scripts/upload_to_supabase.py
 ```
 
-The dataset (`data/pokemon.csv`) is bundled in this repo.
+### Deploying to Modal
+
+```bash
+uv run modal secret create pokedex-supabase SUPABASE_URL=... SUPABASE_PUBLISHABLE_KEY=...
+uv run modal deploy modal_app.py
+```
 
 ## Features
 

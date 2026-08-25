@@ -1,13 +1,20 @@
 """Streamlit app for exploring the Kaggle Complete Pokemon Dataset across generations."""
 
 import ast
+import os
 
 import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
 import streamlit as st
+from dotenv import load_dotenv
+from supabase import create_client
 
-DATA_PATH = "data/pokemon.csv"
+load_dotenv()
+
+SUPABASE_URL = os.environ["SUPABASE_URL"]
+SUPABASE_KEY = os.environ["SUPABASE_PUBLISHABLE_KEY"]
+PAGE_SIZE = 1000
 
 # dataviz skill categorical palette, dark-surface steps (validated, fixed order — reused as-is)
 CATEGORICAL = ["#3987e5", "#d95926", "#199e70", "#c98500", "#d55181", "#39c239", "#9085e9", "#e66767"]
@@ -55,7 +62,17 @@ def base_layout(fig: go.Figure, **kwargs) -> go.Figure:
 
 @st.cache_data
 def load_data() -> pd.DataFrame:
-    df = pd.read_csv(DATA_PATH)
+    client = create_client(SUPABASE_URL, SUPABASE_KEY)
+    rows = []
+    start = 0
+    while True:
+        page = client.table("pokemon").select("*").range(start, start + PAGE_SIZE - 1).execute().data
+        rows.extend(page)
+        if len(page) < PAGE_SIZE:
+            break
+        start += PAGE_SIZE
+
+    df = pd.DataFrame(rows)
     df["type2"] = df["type2"].fillna("none")
     df["generation"] = df["generation"].astype(int)
     df["is_legendary"] = df["is_legendary"].astype(bool)
