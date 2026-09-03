@@ -1,0 +1,4334 @@
+[
+  {
+    "dexNum": 3,
+    "species": "venusaur",
+    "variant": "venusaur-mega",
+    "status": "MISSING",
+    "pokeapi": {
+      "baseTotal": 625,
+      "types": [
+        "grass",
+        "poison"
+      ],
+      "stats": {
+        "hp": 80,
+        "attack": 100,
+        "defense": 123,
+        "special-attack": 122,
+        "special-defense": 120,
+        "speed": 80
+      }
+    }
+  },
+  {
+    "dexNum": 6,
+    "species": "charizard",
+    "variant": "charizard-mega-x",
+    "status": "MISSING",
+    "pokeapi": {
+      "baseTotal": 634,
+      "types": [
+        "dragon",
+        "fire"
+      ],
+      "stats": {
+        "hp": 78,
+        "attack": 130,
+        "defense": 111,
+        "special-attack": 130,
+        "special-defense": 85,
+        "speed": 100
+      }
+    }
+  },
+  {
+    "dexNum": 6,
+    "species": "charizard",
+    "variant": "charizard-mega-y",
+    "status": "MISSING",
+    "pokeapi": {
+      "baseTotal": 634,
+      "types": [
+        "fire",
+        "flying"
+      ],
+      "stats": {
+        "hp": 78,
+        "attack": 104,
+        "defense": 78,
+        "special-attack": 159,
+        "special-defense": 115,
+        "speed": 100
+      }
+    }
+  },
+  {
+    "dexNum": 9,
+    "species": "blastoise",
+    "variant": "blastoise-mega",
+    "status": "MISSING",
+    "pokeapi": {
+      "baseTotal": 630,
+      "types": [
+        "water"
+      ],
+      "stats": {
+        "hp": 79,
+        "attack": 103,
+        "defense": 120,
+        "special-attack": 135,
+        "special-defense": 115,
+        "speed": 78
+      }
+    }
+  },
+  {
+    "dexNum": 15,
+    "species": "beedrill",
+    "variant": "beedrill-mega",
+    "status": "MISSING",
+    "pokeapi": {
+      "baseTotal": 495,
+      "types": [
+        "bug",
+        "poison"
+      ],
+      "stats": {
+        "hp": 65,
+        "attack": 150,
+        "defense": 40,
+        "special-attack": 15,
+        "special-defense": 80,
+        "speed": 145
+      }
+    }
+  },
+  {
+    "dexNum": 18,
+    "species": "pidgeot",
+    "variant": "pidgeot-mega",
+    "status": "MISSING",
+    "pokeapi": {
+      "baseTotal": 579,
+      "types": [
+        "flying",
+        "normal"
+      ],
+      "stats": {
+        "hp": 83,
+        "attack": 80,
+        "defense": 80,
+        "special-attack": 135,
+        "special-defense": 80,
+        "speed": 121
+      }
+    }
+  },
+  {
+    "dexNum": 19,
+    "species": "rattata",
+    "variant": "rattata-alola",
+    "status": "present (name match, verify manually)",
+    "pokeapi": {
+      "baseTotal": 253,
+      "types": [
+        "dark",
+        "normal"
+      ],
+      "stats": {
+        "hp": 30,
+        "attack": 56,
+        "defense": 35,
+        "special-attack": 25,
+        "special-defense": 35,
+        "speed": 72
+      }
+    }
+  },
+  {
+    "dexNum": 20,
+    "species": "raticate",
+    "variant": "raticate-alola",
+    "status": "present (name match, verify manually)",
+    "pokeapi": {
+      "baseTotal": 413,
+      "types": [
+        "dark",
+        "normal"
+      ],
+      "stats": {
+        "hp": 75,
+        "attack": 71,
+        "defense": 70,
+        "special-attack": 40,
+        "special-defense": 80,
+        "speed": 77
+      }
+    }
+  },
+  {
+    "dexNum": 20,
+    "species": "raticate",
+    "variant": "raticate-totem-alola",
+    "status": "MISSING",
+    "pokeapi": {
+      "baseTotal": 413,
+      "types": [
+        "dark",
+        "normal"
+      ],
+      "stats": {
+        "hp": 75,
+        "attack": 71,
+        "defense": 70,
+        "special-attack": 40,
+        "special-defense": 80,
+        "speed": 77
+      }
+    }
+  },
+  {
+    "dexNum": 25,
+    "species": "pikachu",
+    "variant": "pikachu-starter",
+    "status": "MISSING",
+    "pokeapi": {
+      "baseTotal": 430,
+      "types": [
+        "electric"
+      ],
+      "stats": {
+        "hp": 45,
+        "attack": 80,
+        "defense": 50,
+        "special-attack": 75,
+        "special-defense": 60,
+        "speed": 120
+      }
+    }
+  },
+  {
+    "dexNum": 26,
+    "species": "raichu",
+    "variant": "raichu-alola",
+    "status": "present (name match, verify manually)",
+    "pokeapi": {
+      "baseTotal": 485,
+      "types": [
+        "electric",
+        "psychic"
+      ],
+      "stats": {
+        "hp": 60,
+        "attack": 85,
+        "defense": 50,
+        "special-attack": 95,
+        "special-defense": 85,
+        "speed": 110
+      }
+    }
+  },
+  {
+    "dexNum": 26,
+    "species": "raichu",
+    "variant": "raichu-mega-x",
+    "status": "MISSING",
+    "pokeapi": {
+      "baseTotal": 585,
+      "types": [
+        "electric"
+      ],
+      "stats": {
+        "hp": 60,
+        "attack": 135,
+        "defense": 95,
+        "special-attack": 90,
+        "special-defense": 95,
+        "speed": 110
+      }
+    }
+  },
+  {
+    "dexNum": 26,
+    "species": "raichu",
+    "variant": "raichu-mega-y",
+    "status": "MISSING",
+    "pokeapi": {
+      "baseTotal": 585,
+      "types": [
+        "electric"
+      ],
+      "stats": {
+        "hp": 60,
+        "attack": 100,
+        "defense": 55,
+        "special-attack": 160,
+        "special-defense": 80,
+        "speed": 130
+      }
+    }
+  },
+  {
+    "dexNum": 27,
+    "species": "sandshrew",
+    "variant": "sandshrew-alola",
+    "status": "present (name match, verify manually)",
+    "pokeapi": {
+      "baseTotal": 300,
+      "types": [
+        "ice",
+        "steel"
+      ],
+      "stats": {
+        "hp": 50,
+        "attack": 75,
+        "defense": 90,
+        "special-attack": 10,
+        "special-defense": 35,
+        "speed": 40
+      }
+    }
+  },
+  {
+    "dexNum": 28,
+    "species": "sandslash",
+    "variant": "sandslash-alola",
+    "status": "present (name match, verify manually)",
+    "pokeapi": {
+      "baseTotal": 450,
+      "types": [
+        "ice",
+        "steel"
+      ],
+      "stats": {
+        "hp": 75,
+        "attack": 100,
+        "defense": 120,
+        "special-attack": 25,
+        "special-defense": 65,
+        "speed": 65
+      }
+    }
+  },
+  {
+    "dexNum": 36,
+    "species": "clefable",
+    "variant": "clefable-mega",
+    "status": "MISSING",
+    "pokeapi": {
+      "baseTotal": 583,
+      "types": [
+        "fairy",
+        "flying"
+      ],
+      "stats": {
+        "hp": 95,
+        "attack": 80,
+        "defense": 93,
+        "special-attack": 135,
+        "special-defense": 110,
+        "speed": 70
+      }
+    }
+  },
+  {
+    "dexNum": 37,
+    "species": "vulpix",
+    "variant": "vulpix-alola",
+    "status": "present (name match, verify manually)",
+    "pokeapi": {
+      "baseTotal": 299,
+      "types": [
+        "ice"
+      ],
+      "stats": {
+        "hp": 38,
+        "attack": 41,
+        "defense": 40,
+        "special-attack": 50,
+        "special-defense": 65,
+        "speed": 65
+      }
+    }
+  },
+  {
+    "dexNum": 38,
+    "species": "ninetales",
+    "variant": "ninetales-alola",
+    "status": "present (name match, verify manually)",
+    "pokeapi": {
+      "baseTotal": 505,
+      "types": [
+        "fairy",
+        "ice"
+      ],
+      "stats": {
+        "hp": 73,
+        "attack": 67,
+        "defense": 75,
+        "special-attack": 81,
+        "special-defense": 100,
+        "speed": 109
+      }
+    }
+  },
+  {
+    "dexNum": 50,
+    "species": "diglett",
+    "variant": "diglett-alola",
+    "status": "present (name match, verify manually)",
+    "pokeapi": {
+      "baseTotal": 265,
+      "types": [
+        "ground",
+        "steel"
+      ],
+      "stats": {
+        "hp": 10,
+        "attack": 55,
+        "defense": 30,
+        "special-attack": 35,
+        "special-defense": 45,
+        "speed": 90
+      }
+    }
+  },
+  {
+    "dexNum": 51,
+    "species": "dugtrio",
+    "variant": "dugtrio-alola",
+    "status": "present (name match, verify manually)",
+    "pokeapi": {
+      "baseTotal": 425,
+      "types": [
+        "ground",
+        "steel"
+      ],
+      "stats": {
+        "hp": 35,
+        "attack": 100,
+        "defense": 60,
+        "special-attack": 50,
+        "special-defense": 70,
+        "speed": 110
+      }
+    }
+  },
+  {
+    "dexNum": 52,
+    "species": "meowth",
+    "variant": "meowth-alola",
+    "status": "present (name match, verify manually)",
+    "pokeapi": {
+      "baseTotal": 290,
+      "types": [
+        "dark"
+      ],
+      "stats": {
+        "hp": 40,
+        "attack": 35,
+        "defense": 35,
+        "special-attack": 50,
+        "special-defense": 40,
+        "speed": 90
+      }
+    }
+  },
+  {
+    "dexNum": 52,
+    "species": "meowth",
+    "variant": "meowth-galar",
+    "status": "present (name match, verify manually)",
+    "pokeapi": {
+      "baseTotal": 290,
+      "types": [
+        "steel"
+      ],
+      "stats": {
+        "hp": 50,
+        "attack": 65,
+        "defense": 55,
+        "special-attack": 40,
+        "special-defense": 40,
+        "speed": 40
+      }
+    }
+  },
+  {
+    "dexNum": 53,
+    "species": "persian",
+    "variant": "persian-alola",
+    "status": "present (name match, verify manually)",
+    "pokeapi": {
+      "baseTotal": 440,
+      "types": [
+        "dark"
+      ],
+      "stats": {
+        "hp": 65,
+        "attack": 60,
+        "defense": 60,
+        "special-attack": 75,
+        "special-defense": 65,
+        "speed": 115
+      }
+    }
+  },
+  {
+    "dexNum": 58,
+    "species": "growlithe",
+    "variant": "growlithe-hisui",
+    "status": "present (name match, verify manually)",
+    "pokeapi": {
+      "baseTotal": 350,
+      "types": [
+        "fire",
+        "rock"
+      ],
+      "stats": {
+        "hp": 60,
+        "attack": 75,
+        "defense": 45,
+        "special-attack": 65,
+        "special-defense": 50,
+        "speed": 55
+      }
+    }
+  },
+  {
+    "dexNum": 59,
+    "species": "arcanine",
+    "variant": "arcanine-hisui",
+    "status": "present (name match, verify manually)",
+    "pokeapi": {
+      "baseTotal": 555,
+      "types": [
+        "fire",
+        "rock"
+      ],
+      "stats": {
+        "hp": 95,
+        "attack": 115,
+        "defense": 80,
+        "special-attack": 95,
+        "special-defense": 80,
+        "speed": 90
+      }
+    }
+  },
+  {
+    "dexNum": 65,
+    "species": "alakazam",
+    "variant": "alakazam-mega",
+    "status": "MISSING",
+    "pokeapi": {
+      "baseTotal": 600,
+      "types": [
+        "psychic"
+      ],
+      "stats": {
+        "hp": 55,
+        "attack": 50,
+        "defense": 65,
+        "special-attack": 175,
+        "special-defense": 105,
+        "speed": 150
+      }
+    }
+  },
+  {
+    "dexNum": 71,
+    "species": "victreebel",
+    "variant": "victreebel-mega",
+    "status": "MISSING",
+    "pokeapi": {
+      "baseTotal": 590,
+      "types": [
+        "grass",
+        "poison"
+      ],
+      "stats": {
+        "hp": 80,
+        "attack": 125,
+        "defense": 85,
+        "special-attack": 135,
+        "special-defense": 95,
+        "speed": 70
+      }
+    }
+  },
+  {
+    "dexNum": 74,
+    "species": "geodude",
+    "variant": "geodude-alola",
+    "status": "present (name match, verify manually)",
+    "pokeapi": {
+      "baseTotal": 300,
+      "types": [
+        "electric",
+        "rock"
+      ],
+      "stats": {
+        "hp": 40,
+        "attack": 80,
+        "defense": 100,
+        "special-attack": 30,
+        "special-defense": 30,
+        "speed": 20
+      }
+    }
+  },
+  {
+    "dexNum": 75,
+    "species": "graveler",
+    "variant": "graveler-alola",
+    "status": "present (name match, verify manually)",
+    "pokeapi": {
+      "baseTotal": 390,
+      "types": [
+        "electric",
+        "rock"
+      ],
+      "stats": {
+        "hp": 55,
+        "attack": 95,
+        "defense": 115,
+        "special-attack": 45,
+        "special-defense": 45,
+        "speed": 35
+      }
+    }
+  },
+  {
+    "dexNum": 76,
+    "species": "golem",
+    "variant": "golem-alola",
+    "status": "present (name match, verify manually)",
+    "pokeapi": {
+      "baseTotal": 495,
+      "types": [
+        "electric",
+        "rock"
+      ],
+      "stats": {
+        "hp": 80,
+        "attack": 120,
+        "defense": 130,
+        "special-attack": 55,
+        "special-defense": 65,
+        "speed": 45
+      }
+    }
+  },
+  {
+    "dexNum": 77,
+    "species": "ponyta",
+    "variant": "ponyta-galar",
+    "status": "present (name match, verify manually)",
+    "pokeapi": {
+      "baseTotal": 410,
+      "types": [
+        "psychic"
+      ],
+      "stats": {
+        "hp": 50,
+        "attack": 85,
+        "defense": 55,
+        "special-attack": 65,
+        "special-defense": 65,
+        "speed": 90
+      }
+    }
+  },
+  {
+    "dexNum": 78,
+    "species": "rapidash",
+    "variant": "rapidash-galar",
+    "status": "present (name match, verify manually)",
+    "pokeapi": {
+      "baseTotal": 500,
+      "types": [
+        "fairy",
+        "psychic"
+      ],
+      "stats": {
+        "hp": 65,
+        "attack": 100,
+        "defense": 70,
+        "special-attack": 80,
+        "special-defense": 80,
+        "speed": 105
+      }
+    }
+  },
+  {
+    "dexNum": 79,
+    "species": "slowpoke",
+    "variant": "slowpoke-galar",
+    "status": "present (name match, verify manually)",
+    "pokeapi": {
+      "baseTotal": 315,
+      "types": [
+        "psychic"
+      ],
+      "stats": {
+        "hp": 90,
+        "attack": 65,
+        "defense": 65,
+        "special-attack": 40,
+        "special-defense": 40,
+        "speed": 15
+      }
+    }
+  },
+  {
+    "dexNum": 80,
+    "species": "slowbro",
+    "variant": "slowbro-mega",
+    "status": "MISSING",
+    "pokeapi": {
+      "baseTotal": 590,
+      "types": [
+        "psychic",
+        "water"
+      ],
+      "stats": {
+        "hp": 95,
+        "attack": 75,
+        "defense": 180,
+        "special-attack": 130,
+        "special-defense": 80,
+        "speed": 30
+      }
+    }
+  },
+  {
+    "dexNum": 80,
+    "species": "slowbro",
+    "variant": "slowbro-galar",
+    "status": "present (name match, verify manually)",
+    "pokeapi": {
+      "baseTotal": 490,
+      "types": [
+        "poison",
+        "psychic"
+      ],
+      "stats": {
+        "hp": 95,
+        "attack": 100,
+        "defense": 95,
+        "special-attack": 100,
+        "special-defense": 70,
+        "speed": 30
+      }
+    }
+  },
+  {
+    "dexNum": 83,
+    "species": "farfetchd",
+    "variant": "farfetchd-galar",
+    "status": "present (name match, verify manually)",
+    "pokeapi": {
+      "baseTotal": 377,
+      "types": [
+        "fighting"
+      ],
+      "stats": {
+        "hp": 52,
+        "attack": 95,
+        "defense": 55,
+        "special-attack": 58,
+        "special-defense": 62,
+        "speed": 55
+      }
+    }
+  },
+  {
+    "dexNum": 88,
+    "species": "grimer",
+    "variant": "grimer-alola",
+    "status": "present (name match, verify manually)",
+    "pokeapi": {
+      "baseTotal": 325,
+      "types": [
+        "dark",
+        "poison"
+      ],
+      "stats": {
+        "hp": 80,
+        "attack": 80,
+        "defense": 50,
+        "special-attack": 40,
+        "special-defense": 50,
+        "speed": 25
+      }
+    }
+  },
+  {
+    "dexNum": 89,
+    "species": "muk",
+    "variant": "muk-alola",
+    "status": "present (name match, verify manually)",
+    "pokeapi": {
+      "baseTotal": 500,
+      "types": [
+        "dark",
+        "poison"
+      ],
+      "stats": {
+        "hp": 105,
+        "attack": 105,
+        "defense": 75,
+        "special-attack": 65,
+        "special-defense": 100,
+        "speed": 50
+      }
+    }
+  },
+  {
+    "dexNum": 94,
+    "species": "gengar",
+    "variant": "gengar-mega",
+    "status": "MISSING",
+    "pokeapi": {
+      "baseTotal": 600,
+      "types": [
+        "ghost",
+        "poison"
+      ],
+      "stats": {
+        "hp": 60,
+        "attack": 65,
+        "defense": 80,
+        "special-attack": 170,
+        "special-defense": 95,
+        "speed": 130
+      }
+    }
+  },
+  {
+    "dexNum": 100,
+    "species": "voltorb",
+    "variant": "voltorb-hisui",
+    "status": "present (name match, verify manually)",
+    "pokeapi": {
+      "baseTotal": 330,
+      "types": [
+        "electric",
+        "grass"
+      ],
+      "stats": {
+        "hp": 40,
+        "attack": 30,
+        "defense": 50,
+        "special-attack": 55,
+        "special-defense": 55,
+        "speed": 100
+      }
+    }
+  },
+  {
+    "dexNum": 101,
+    "species": "electrode",
+    "variant": "electrode-hisui",
+    "status": "present (name match, verify manually)",
+    "pokeapi": {
+      "baseTotal": 490,
+      "types": [
+        "electric",
+        "grass"
+      ],
+      "stats": {
+        "hp": 60,
+        "attack": 50,
+        "defense": 70,
+        "special-attack": 80,
+        "special-defense": 80,
+        "speed": 150
+      }
+    }
+  },
+  {
+    "dexNum": 103,
+    "species": "exeggutor",
+    "variant": "exeggutor-alola",
+    "status": "present (name match, verify manually)",
+    "pokeapi": {
+      "baseTotal": 530,
+      "types": [
+        "dragon",
+        "grass"
+      ],
+      "stats": {
+        "hp": 95,
+        "attack": 105,
+        "defense": 85,
+        "special-attack": 125,
+        "special-defense": 75,
+        "speed": 45
+      }
+    }
+  },
+  {
+    "dexNum": 105,
+    "species": "marowak",
+    "variant": "marowak-alola",
+    "status": "present (name match, verify manually)",
+    "pokeapi": {
+      "baseTotal": 425,
+      "types": [
+        "fire",
+        "ghost"
+      ],
+      "stats": {
+        "hp": 60,
+        "attack": 80,
+        "defense": 110,
+        "special-attack": 50,
+        "special-defense": 80,
+        "speed": 45
+      }
+    }
+  },
+  {
+    "dexNum": 105,
+    "species": "marowak",
+    "variant": "marowak-totem",
+    "status": "MISSING",
+    "pokeapi": {
+      "baseTotal": 425,
+      "types": [
+        "fire",
+        "ghost"
+      ],
+      "stats": {
+        "hp": 60,
+        "attack": 80,
+        "defense": 110,
+        "special-attack": 50,
+        "special-defense": 80,
+        "speed": 45
+      }
+    }
+  },
+  {
+    "dexNum": 110,
+    "species": "weezing",
+    "variant": "weezing-galar",
+    "status": "present (name match, verify manually)",
+    "pokeapi": {
+      "baseTotal": 490,
+      "types": [
+        "fairy",
+        "poison"
+      ],
+      "stats": {
+        "hp": 65,
+        "attack": 90,
+        "defense": 120,
+        "special-attack": 85,
+        "special-defense": 70,
+        "speed": 60
+      }
+    }
+  },
+  {
+    "dexNum": 115,
+    "species": "kangaskhan",
+    "variant": "kangaskhan-mega",
+    "status": "MISSING",
+    "pokeapi": {
+      "baseTotal": 590,
+      "types": [
+        "normal"
+      ],
+      "stats": {
+        "hp": 105,
+        "attack": 125,
+        "defense": 100,
+        "special-attack": 60,
+        "special-defense": 100,
+        "speed": 100
+      }
+    }
+  },
+  {
+    "dexNum": 121,
+    "species": "starmie",
+    "variant": "starmie-mega",
+    "status": "MISSING",
+    "pokeapi": {
+      "baseTotal": 620,
+      "types": [
+        "psychic",
+        "water"
+      ],
+      "stats": {
+        "hp": 60,
+        "attack": 100,
+        "defense": 105,
+        "special-attack": 130,
+        "special-defense": 105,
+        "speed": 120
+      }
+    }
+  },
+  {
+    "dexNum": 122,
+    "species": "mr-mime",
+    "variant": "mr-mime-galar",
+    "status": "present (name match, verify manually)",
+    "pokeapi": {
+      "baseTotal": 460,
+      "types": [
+        "ice",
+        "psychic"
+      ],
+      "stats": {
+        "hp": 50,
+        "attack": 65,
+        "defense": 65,
+        "special-attack": 90,
+        "special-defense": 90,
+        "speed": 100
+      }
+    }
+  },
+  {
+    "dexNum": 127,
+    "species": "pinsir",
+    "variant": "pinsir-mega",
+    "status": "MISSING",
+    "pokeapi": {
+      "baseTotal": 600,
+      "types": [
+        "bug",
+        "flying"
+      ],
+      "stats": {
+        "hp": 65,
+        "attack": 155,
+        "defense": 120,
+        "special-attack": 65,
+        "special-defense": 90,
+        "speed": 105
+      }
+    }
+  },
+  {
+    "dexNum": 128,
+    "species": "tauros",
+    "variant": "tauros-paldea-combat-breed",
+    "status": "present (name match, verify manually)",
+    "pokeapi": {
+      "baseTotal": 490,
+      "types": [
+        "fighting"
+      ],
+      "stats": {
+        "hp": 75,
+        "attack": 110,
+        "defense": 105,
+        "special-attack": 30,
+        "special-defense": 70,
+        "speed": 100
+      }
+    }
+  },
+  {
+    "dexNum": 128,
+    "species": "tauros",
+    "variant": "tauros-paldea-blaze-breed",
+    "status": "present (name match, verify manually)",
+    "pokeapi": {
+      "baseTotal": 490,
+      "types": [
+        "fighting",
+        "fire"
+      ],
+      "stats": {
+        "hp": 75,
+        "attack": 110,
+        "defense": 105,
+        "special-attack": 30,
+        "special-defense": 70,
+        "speed": 100
+      }
+    }
+  },
+  {
+    "dexNum": 128,
+    "species": "tauros",
+    "variant": "tauros-paldea-aqua-breed",
+    "status": "present (name match, verify manually)",
+    "pokeapi": {
+      "baseTotal": 490,
+      "types": [
+        "fighting",
+        "water"
+      ],
+      "stats": {
+        "hp": 75,
+        "attack": 110,
+        "defense": 105,
+        "special-attack": 30,
+        "special-defense": 70,
+        "speed": 100
+      }
+    }
+  },
+  {
+    "dexNum": 130,
+    "species": "gyarados",
+    "variant": "gyarados-mega",
+    "status": "MISSING",
+    "pokeapi": {
+      "baseTotal": 640,
+      "types": [
+        "dark",
+        "water"
+      ],
+      "stats": {
+        "hp": 95,
+        "attack": 155,
+        "defense": 109,
+        "special-attack": 70,
+        "special-defense": 130,
+        "speed": 81
+      }
+    }
+  },
+  {
+    "dexNum": 133,
+    "species": "eevee",
+    "variant": "eevee-starter",
+    "status": "MISSING",
+    "pokeapi": {
+      "baseTotal": 435,
+      "types": [
+        "normal"
+      ],
+      "stats": {
+        "hp": 65,
+        "attack": 75,
+        "defense": 70,
+        "special-attack": 65,
+        "special-defense": 85,
+        "speed": 75
+      }
+    }
+  },
+  {
+    "dexNum": 142,
+    "species": "aerodactyl",
+    "variant": "aerodactyl-mega",
+    "status": "MISSING",
+    "pokeapi": {
+      "baseTotal": 615,
+      "types": [
+        "flying",
+        "rock"
+      ],
+      "stats": {
+        "hp": 80,
+        "attack": 135,
+        "defense": 85,
+        "special-attack": 70,
+        "special-defense": 95,
+        "speed": 150
+      }
+    }
+  },
+  {
+    "dexNum": 144,
+    "species": "articuno",
+    "variant": "articuno-galar",
+    "status": "present (name match, verify manually)",
+    "pokeapi": {
+      "baseTotal": 580,
+      "types": [
+        "flying",
+        "psychic"
+      ],
+      "stats": {
+        "hp": 90,
+        "attack": 85,
+        "defense": 85,
+        "special-attack": 125,
+        "special-defense": 100,
+        "speed": 95
+      }
+    }
+  },
+  {
+    "dexNum": 145,
+    "species": "zapdos",
+    "variant": "zapdos-galar",
+    "status": "present (name match, verify manually)",
+    "pokeapi": {
+      "baseTotal": 580,
+      "types": [
+        "fighting",
+        "flying"
+      ],
+      "stats": {
+        "hp": 90,
+        "attack": 125,
+        "defense": 90,
+        "special-attack": 85,
+        "special-defense": 90,
+        "speed": 100
+      }
+    }
+  },
+  {
+    "dexNum": 146,
+    "species": "moltres",
+    "variant": "moltres-galar",
+    "status": "present (name match, verify manually)",
+    "pokeapi": {
+      "baseTotal": 580,
+      "types": [
+        "dark",
+        "flying"
+      ],
+      "stats": {
+        "hp": 90,
+        "attack": 85,
+        "defense": 90,
+        "special-attack": 100,
+        "special-defense": 125,
+        "speed": 90
+      }
+    }
+  },
+  {
+    "dexNum": 149,
+    "species": "dragonite",
+    "variant": "dragonite-mega",
+    "status": "MISSING",
+    "pokeapi": {
+      "baseTotal": 700,
+      "types": [
+        "dragon",
+        "flying"
+      ],
+      "stats": {
+        "hp": 91,
+        "attack": 124,
+        "defense": 115,
+        "special-attack": 145,
+        "special-defense": 125,
+        "speed": 100
+      }
+    }
+  },
+  {
+    "dexNum": 150,
+    "species": "mewtwo",
+    "variant": "mewtwo-mega-x",
+    "status": "MISSING",
+    "pokeapi": {
+      "baseTotal": 780,
+      "types": [
+        "fighting",
+        "psychic"
+      ],
+      "stats": {
+        "hp": 106,
+        "attack": 190,
+        "defense": 100,
+        "special-attack": 154,
+        "special-defense": 100,
+        "speed": 130
+      }
+    }
+  },
+  {
+    "dexNum": 150,
+    "species": "mewtwo",
+    "variant": "mewtwo-mega-y",
+    "status": "MISSING",
+    "pokeapi": {
+      "baseTotal": 780,
+      "types": [
+        "psychic"
+      ],
+      "stats": {
+        "hp": 106,
+        "attack": 150,
+        "defense": 70,
+        "special-attack": 194,
+        "special-defense": 120,
+        "speed": 140
+      }
+    }
+  },
+  {
+    "dexNum": 154,
+    "species": "meganium",
+    "variant": "meganium-mega",
+    "status": "present (name match, verify manually)",
+    "pokeapi": {
+      "baseTotal": 625,
+      "types": [
+        "fairy",
+        "grass"
+      ],
+      "stats": {
+        "hp": 80,
+        "attack": 92,
+        "defense": 115,
+        "special-attack": 143,
+        "special-defense": 115,
+        "speed": 80
+      }
+    }
+  },
+  {
+    "dexNum": 157,
+    "species": "typhlosion",
+    "variant": "typhlosion-hisui",
+    "status": "present (name match, verify manually)",
+    "pokeapi": {
+      "baseTotal": 534,
+      "types": [
+        "fire",
+        "ghost"
+      ],
+      "stats": {
+        "hp": 73,
+        "attack": 84,
+        "defense": 78,
+        "special-attack": 119,
+        "special-defense": 85,
+        "speed": 95
+      }
+    }
+  },
+  {
+    "dexNum": 160,
+    "species": "feraligatr",
+    "variant": "feraligatr-mega",
+    "status": "MISSING",
+    "pokeapi": {
+      "baseTotal": 630,
+      "types": [
+        "dragon",
+        "water"
+      ],
+      "stats": {
+        "hp": 85,
+        "attack": 160,
+        "defense": 125,
+        "special-attack": 89,
+        "special-defense": 93,
+        "speed": 78
+      }
+    }
+  },
+  {
+    "dexNum": 181,
+    "species": "ampharos",
+    "variant": "ampharos-mega",
+    "status": "MISSING",
+    "pokeapi": {
+      "baseTotal": 610,
+      "types": [
+        "dragon",
+        "electric"
+      ],
+      "stats": {
+        "hp": 90,
+        "attack": 95,
+        "defense": 105,
+        "special-attack": 165,
+        "special-defense": 110,
+        "speed": 45
+      }
+    }
+  },
+  {
+    "dexNum": 194,
+    "species": "wooper",
+    "variant": "wooper-paldea",
+    "status": "present (name match, verify manually)",
+    "pokeapi": {
+      "baseTotal": 210,
+      "types": [
+        "ground",
+        "poison"
+      ],
+      "stats": {
+        "hp": 55,
+        "attack": 45,
+        "defense": 45,
+        "special-attack": 25,
+        "special-defense": 25,
+        "speed": 15
+      }
+    }
+  },
+  {
+    "dexNum": 199,
+    "species": "slowking",
+    "variant": "slowking-galar",
+    "status": "present (name match, verify manually)",
+    "pokeapi": {
+      "baseTotal": 490,
+      "types": [
+        "poison",
+        "psychic"
+      ],
+      "stats": {
+        "hp": 95,
+        "attack": 65,
+        "defense": 80,
+        "special-attack": 110,
+        "special-defense": 110,
+        "speed": 30
+      }
+    }
+  },
+  {
+    "dexNum": 208,
+    "species": "steelix",
+    "variant": "steelix-mega",
+    "status": "MISSING",
+    "pokeapi": {
+      "baseTotal": 610,
+      "types": [
+        "ground",
+        "steel"
+      ],
+      "stats": {
+        "hp": 75,
+        "attack": 125,
+        "defense": 230,
+        "special-attack": 55,
+        "special-defense": 95,
+        "speed": 30
+      }
+    }
+  },
+  {
+    "dexNum": 211,
+    "species": "qwilfish",
+    "variant": "qwilfish-hisui",
+    "status": "present (name match, verify manually)",
+    "pokeapi": {
+      "baseTotal": 440,
+      "types": [
+        "dark",
+        "poison"
+      ],
+      "stats": {
+        "hp": 65,
+        "attack": 95,
+        "defense": 85,
+        "special-attack": 55,
+        "special-defense": 55,
+        "speed": 85
+      }
+    }
+  },
+  {
+    "dexNum": 212,
+    "species": "scizor",
+    "variant": "scizor-mega",
+    "status": "MISSING",
+    "pokeapi": {
+      "baseTotal": 600,
+      "types": [
+        "bug",
+        "steel"
+      ],
+      "stats": {
+        "hp": 70,
+        "attack": 150,
+        "defense": 140,
+        "special-attack": 65,
+        "special-defense": 100,
+        "speed": 75
+      }
+    }
+  },
+  {
+    "dexNum": 214,
+    "species": "heracross",
+    "variant": "heracross-mega",
+    "status": "MISSING",
+    "pokeapi": {
+      "baseTotal": 600,
+      "types": [
+        "bug",
+        "fighting"
+      ],
+      "stats": {
+        "hp": 80,
+        "attack": 185,
+        "defense": 115,
+        "special-attack": 40,
+        "special-defense": 105,
+        "speed": 75
+      }
+    }
+  },
+  {
+    "dexNum": 215,
+    "species": "sneasel",
+    "variant": "sneasel-hisui",
+    "status": "present (name match, verify manually)",
+    "pokeapi": {
+      "baseTotal": 430,
+      "types": [
+        "fighting",
+        "poison"
+      ],
+      "stats": {
+        "hp": 55,
+        "attack": 95,
+        "defense": 55,
+        "special-attack": 35,
+        "special-defense": 75,
+        "speed": 115
+      }
+    }
+  },
+  {
+    "dexNum": 222,
+    "species": "corsola",
+    "variant": "corsola-galar",
+    "status": "present (name match, verify manually)",
+    "pokeapi": {
+      "baseTotal": 410,
+      "types": [
+        "ghost"
+      ],
+      "stats": {
+        "hp": 60,
+        "attack": 55,
+        "defense": 100,
+        "special-attack": 65,
+        "special-defense": 100,
+        "speed": 30
+      }
+    }
+  },
+  {
+    "dexNum": 227,
+    "species": "skarmory",
+    "variant": "skarmory-mega",
+    "status": "MISSING",
+    "pokeapi": {
+      "baseTotal": 565,
+      "types": [
+        "flying",
+        "steel"
+      ],
+      "stats": {
+        "hp": 65,
+        "attack": 140,
+        "defense": 110,
+        "special-attack": 40,
+        "special-defense": 100,
+        "speed": 110
+      }
+    }
+  },
+  {
+    "dexNum": 229,
+    "species": "houndoom",
+    "variant": "houndoom-mega",
+    "status": "MISSING",
+    "pokeapi": {
+      "baseTotal": 600,
+      "types": [
+        "dark",
+        "fire"
+      ],
+      "stats": {
+        "hp": 75,
+        "attack": 90,
+        "defense": 90,
+        "special-attack": 140,
+        "special-defense": 90,
+        "speed": 115
+      }
+    }
+  },
+  {
+    "dexNum": 248,
+    "species": "tyranitar",
+    "variant": "tyranitar-mega",
+    "status": "MISSING",
+    "pokeapi": {
+      "baseTotal": 700,
+      "types": [
+        "dark",
+        "rock"
+      ],
+      "stats": {
+        "hp": 100,
+        "attack": 164,
+        "defense": 150,
+        "special-attack": 95,
+        "special-defense": 120,
+        "speed": 71
+      }
+    }
+  },
+  {
+    "dexNum": 254,
+    "species": "sceptile",
+    "variant": "sceptile-mega",
+    "status": "MISSING",
+    "pokeapi": {
+      "baseTotal": 630,
+      "types": [
+        "dragon",
+        "grass"
+      ],
+      "stats": {
+        "hp": 70,
+        "attack": 110,
+        "defense": 75,
+        "special-attack": 145,
+        "special-defense": 85,
+        "speed": 145
+      }
+    }
+  },
+  {
+    "dexNum": 257,
+    "species": "blaziken",
+    "variant": "blaziken-mega",
+    "status": "MISSING",
+    "pokeapi": {
+      "baseTotal": 630,
+      "types": [
+        "fighting",
+        "fire"
+      ],
+      "stats": {
+        "hp": 80,
+        "attack": 160,
+        "defense": 80,
+        "special-attack": 130,
+        "special-defense": 80,
+        "speed": 100
+      }
+    }
+  },
+  {
+    "dexNum": 260,
+    "species": "swampert",
+    "variant": "swampert-mega",
+    "status": "MISSING",
+    "pokeapi": {
+      "baseTotal": 635,
+      "types": [
+        "ground",
+        "water"
+      ],
+      "stats": {
+        "hp": 100,
+        "attack": 150,
+        "defense": 110,
+        "special-attack": 95,
+        "special-defense": 110,
+        "speed": 70
+      }
+    }
+  },
+  {
+    "dexNum": 263,
+    "species": "zigzagoon",
+    "variant": "zigzagoon-galar",
+    "status": "present (name match, verify manually)",
+    "pokeapi": {
+      "baseTotal": 240,
+      "types": [
+        "dark",
+        "normal"
+      ],
+      "stats": {
+        "hp": 38,
+        "attack": 30,
+        "defense": 41,
+        "special-attack": 30,
+        "special-defense": 41,
+        "speed": 60
+      }
+    }
+  },
+  {
+    "dexNum": 264,
+    "species": "linoone",
+    "variant": "linoone-galar",
+    "status": "present (name match, verify manually)",
+    "pokeapi": {
+      "baseTotal": 420,
+      "types": [
+        "dark",
+        "normal"
+      ],
+      "stats": {
+        "hp": 78,
+        "attack": 70,
+        "defense": 61,
+        "special-attack": 50,
+        "special-defense": 61,
+        "speed": 100
+      }
+    }
+  },
+  {
+    "dexNum": 282,
+    "species": "gardevoir",
+    "variant": "gardevoir-mega",
+    "status": "MISSING",
+    "pokeapi": {
+      "baseTotal": 618,
+      "types": [
+        "fairy",
+        "psychic"
+      ],
+      "stats": {
+        "hp": 68,
+        "attack": 85,
+        "defense": 65,
+        "special-attack": 165,
+        "special-defense": 135,
+        "speed": 100
+      }
+    }
+  },
+  {
+    "dexNum": 302,
+    "species": "sableye",
+    "variant": "sableye-mega",
+    "status": "MISSING",
+    "pokeapi": {
+      "baseTotal": 480,
+      "types": [
+        "dark",
+        "ghost"
+      ],
+      "stats": {
+        "hp": 50,
+        "attack": 85,
+        "defense": 125,
+        "special-attack": 85,
+        "special-defense": 115,
+        "speed": 20
+      }
+    }
+  },
+  {
+    "dexNum": 303,
+    "species": "mawile",
+    "variant": "mawile-mega",
+    "status": "MISSING",
+    "pokeapi": {
+      "baseTotal": 480,
+      "types": [
+        "fairy",
+        "steel"
+      ],
+      "stats": {
+        "hp": 50,
+        "attack": 105,
+        "defense": 125,
+        "special-attack": 55,
+        "special-defense": 95,
+        "speed": 50
+      }
+    }
+  },
+  {
+    "dexNum": 306,
+    "species": "aggron",
+    "variant": "aggron-mega",
+    "status": "MISSING",
+    "pokeapi": {
+      "baseTotal": 630,
+      "types": [
+        "steel"
+      ],
+      "stats": {
+        "hp": 70,
+        "attack": 140,
+        "defense": 230,
+        "special-attack": 60,
+        "special-defense": 80,
+        "speed": 50
+      }
+    }
+  },
+  {
+    "dexNum": 308,
+    "species": "medicham",
+    "variant": "medicham-mega",
+    "status": "MISSING",
+    "pokeapi": {
+      "baseTotal": 510,
+      "types": [
+        "fighting",
+        "psychic"
+      ],
+      "stats": {
+        "hp": 60,
+        "attack": 100,
+        "defense": 85,
+        "special-attack": 80,
+        "special-defense": 85,
+        "speed": 100
+      }
+    }
+  },
+  {
+    "dexNum": 310,
+    "species": "manectric",
+    "variant": "manectric-mega",
+    "status": "MISSING",
+    "pokeapi": {
+      "baseTotal": 575,
+      "types": [
+        "electric"
+      ],
+      "stats": {
+        "hp": 70,
+        "attack": 75,
+        "defense": 80,
+        "special-attack": 135,
+        "special-defense": 80,
+        "speed": 135
+      }
+    }
+  },
+  {
+    "dexNum": 319,
+    "species": "sharpedo",
+    "variant": "sharpedo-mega",
+    "status": "MISSING",
+    "pokeapi": {
+      "baseTotal": 560,
+      "types": [
+        "dark",
+        "water"
+      ],
+      "stats": {
+        "hp": 70,
+        "attack": 140,
+        "defense": 70,
+        "special-attack": 110,
+        "special-defense": 65,
+        "speed": 105
+      }
+    }
+  },
+  {
+    "dexNum": 323,
+    "species": "camerupt",
+    "variant": "camerupt-mega",
+    "status": "MISSING",
+    "pokeapi": {
+      "baseTotal": 560,
+      "types": [
+        "fire",
+        "ground"
+      ],
+      "stats": {
+        "hp": 70,
+        "attack": 120,
+        "defense": 100,
+        "special-attack": 145,
+        "special-defense": 105,
+        "speed": 20
+      }
+    }
+  },
+  {
+    "dexNum": 334,
+    "species": "altaria",
+    "variant": "altaria-mega",
+    "status": "MISSING",
+    "pokeapi": {
+      "baseTotal": 590,
+      "types": [
+        "dragon",
+        "fairy"
+      ],
+      "stats": {
+        "hp": 75,
+        "attack": 110,
+        "defense": 110,
+        "special-attack": 110,
+        "special-defense": 105,
+        "speed": 80
+      }
+    }
+  },
+  {
+    "dexNum": 351,
+    "species": "castform",
+    "variant": "castform-sunny",
+    "status": "MISSING",
+    "pokeapi": {
+      "baseTotal": 420,
+      "types": [
+        "fire"
+      ],
+      "stats": {
+        "hp": 70,
+        "attack": 70,
+        "defense": 70,
+        "special-attack": 70,
+        "special-defense": 70,
+        "speed": 70
+      }
+    }
+  },
+  {
+    "dexNum": 351,
+    "species": "castform",
+    "variant": "castform-rainy",
+    "status": "MISSING",
+    "pokeapi": {
+      "baseTotal": 420,
+      "types": [
+        "water"
+      ],
+      "stats": {
+        "hp": 70,
+        "attack": 70,
+        "defense": 70,
+        "special-attack": 70,
+        "special-defense": 70,
+        "speed": 70
+      }
+    }
+  },
+  {
+    "dexNum": 351,
+    "species": "castform",
+    "variant": "castform-snowy",
+    "status": "MISSING",
+    "pokeapi": {
+      "baseTotal": 420,
+      "types": [
+        "ice"
+      ],
+      "stats": {
+        "hp": 70,
+        "attack": 70,
+        "defense": 70,
+        "special-attack": 70,
+        "special-defense": 70,
+        "speed": 70
+      }
+    }
+  },
+  {
+    "dexNum": 354,
+    "species": "banette",
+    "variant": "banette-mega",
+    "status": "MISSING",
+    "pokeapi": {
+      "baseTotal": 555,
+      "types": [
+        "ghost"
+      ],
+      "stats": {
+        "hp": 64,
+        "attack": 165,
+        "defense": 75,
+        "special-attack": 93,
+        "special-defense": 83,
+        "speed": 75
+      }
+    }
+  },
+  {
+    "dexNum": 358,
+    "species": "chimecho",
+    "variant": "chimecho-mega",
+    "status": "MISSING",
+    "pokeapi": {
+      "baseTotal": 555,
+      "types": [
+        "psychic",
+        "steel"
+      ],
+      "stats": {
+        "hp": 75,
+        "attack": 50,
+        "defense": 110,
+        "special-attack": 135,
+        "special-defense": 120,
+        "speed": 65
+      }
+    }
+  },
+  {
+    "dexNum": 359,
+    "species": "absol",
+    "variant": "absol-mega",
+    "status": "MISSING",
+    "pokeapi": {
+      "baseTotal": 565,
+      "types": [
+        "dark"
+      ],
+      "stats": {
+        "hp": 65,
+        "attack": 150,
+        "defense": 60,
+        "special-attack": 115,
+        "special-defense": 60,
+        "speed": 115
+      }
+    }
+  },
+  {
+    "dexNum": 359,
+    "species": "absol",
+    "variant": "absol-mega-z",
+    "status": "MISSING",
+    "pokeapi": {
+      "baseTotal": 565,
+      "types": [
+        "dark",
+        "ghost"
+      ],
+      "stats": {
+        "hp": 65,
+        "attack": 154,
+        "defense": 60,
+        "special-attack": 75,
+        "special-defense": 60,
+        "speed": 151
+      }
+    }
+  },
+  {
+    "dexNum": 362,
+    "species": "glalie",
+    "variant": "glalie-mega",
+    "status": "MISSING",
+    "pokeapi": {
+      "baseTotal": 580,
+      "types": [
+        "ice"
+      ],
+      "stats": {
+        "hp": 80,
+        "attack": 120,
+        "defense": 80,
+        "special-attack": 120,
+        "special-defense": 80,
+        "speed": 100
+      }
+    }
+  },
+  {
+    "dexNum": 373,
+    "species": "salamence",
+    "variant": "salamence-mega",
+    "status": "MISSING",
+    "pokeapi": {
+      "baseTotal": 700,
+      "types": [
+        "dragon",
+        "flying"
+      ],
+      "stats": {
+        "hp": 95,
+        "attack": 145,
+        "defense": 130,
+        "special-attack": 120,
+        "special-defense": 90,
+        "speed": 120
+      }
+    }
+  },
+  {
+    "dexNum": 376,
+    "species": "metagross",
+    "variant": "metagross-mega",
+    "status": "MISSING",
+    "pokeapi": {
+      "baseTotal": 700,
+      "types": [
+        "psychic",
+        "steel"
+      ],
+      "stats": {
+        "hp": 80,
+        "attack": 145,
+        "defense": 150,
+        "special-attack": 105,
+        "special-defense": 110,
+        "speed": 110
+      }
+    }
+  },
+  {
+    "dexNum": 380,
+    "species": "latias",
+    "variant": "latias-mega",
+    "status": "MISSING",
+    "pokeapi": {
+      "baseTotal": 700,
+      "types": [
+        "dragon",
+        "psychic"
+      ],
+      "stats": {
+        "hp": 80,
+        "attack": 100,
+        "defense": 120,
+        "special-attack": 140,
+        "special-defense": 150,
+        "speed": 110
+      }
+    }
+  },
+  {
+    "dexNum": 381,
+    "species": "latios",
+    "variant": "latios-mega",
+    "status": "MISSING",
+    "pokeapi": {
+      "baseTotal": 700,
+      "types": [
+        "dragon",
+        "psychic"
+      ],
+      "stats": {
+        "hp": 80,
+        "attack": 130,
+        "defense": 100,
+        "special-attack": 160,
+        "special-defense": 120,
+        "speed": 110
+      }
+    }
+  },
+  {
+    "dexNum": 382,
+    "species": "kyogre",
+    "variant": "kyogre-primal",
+    "status": "MISSING",
+    "pokeapi": {
+      "baseTotal": 770,
+      "types": [
+        "water"
+      ],
+      "stats": {
+        "hp": 100,
+        "attack": 150,
+        "defense": 90,
+        "special-attack": 180,
+        "special-defense": 160,
+        "speed": 90
+      }
+    }
+  },
+  {
+    "dexNum": 383,
+    "species": "groudon",
+    "variant": "groudon-primal",
+    "status": "MISSING",
+    "pokeapi": {
+      "baseTotal": 770,
+      "types": [
+        "fire",
+        "ground"
+      ],
+      "stats": {
+        "hp": 100,
+        "attack": 180,
+        "defense": 160,
+        "special-attack": 150,
+        "special-defense": 90,
+        "speed": 90
+      }
+    }
+  },
+  {
+    "dexNum": 384,
+    "species": "rayquaza",
+    "variant": "rayquaza-mega",
+    "status": "MISSING",
+    "pokeapi": {
+      "baseTotal": 780,
+      "types": [
+        "dragon",
+        "flying"
+      ],
+      "stats": {
+        "hp": 105,
+        "attack": 180,
+        "defense": 100,
+        "special-attack": 180,
+        "special-defense": 100,
+        "speed": 115
+      }
+    }
+  },
+  {
+    "dexNum": 398,
+    "species": "staraptor",
+    "variant": "staraptor-mega",
+    "status": "MISSING",
+    "pokeapi": {
+      "baseTotal": 585,
+      "types": [
+        "fighting",
+        "flying"
+      ],
+      "stats": {
+        "hp": 85,
+        "attack": 140,
+        "defense": 100,
+        "special-attack": 60,
+        "special-defense": 90,
+        "speed": 110
+      }
+    }
+  },
+  {
+    "dexNum": 413,
+    "species": "wormadam-plant",
+    "variant": "wormadam-sandy",
+    "status": "present (name match, verify manually)",
+    "pokeapi": {
+      "baseTotal": 424,
+      "types": [
+        "bug",
+        "ground"
+      ],
+      "stats": {
+        "hp": 60,
+        "attack": 79,
+        "defense": 105,
+        "special-attack": 59,
+        "special-defense": 85,
+        "speed": 36
+      }
+    }
+  },
+  {
+    "dexNum": 413,
+    "species": "wormadam-plant",
+    "variant": "wormadam-trash",
+    "status": "present (name match, verify manually)",
+    "pokeapi": {
+      "baseTotal": 424,
+      "types": [
+        "bug",
+        "steel"
+      ],
+      "stats": {
+        "hp": 60,
+        "attack": 69,
+        "defense": 95,
+        "special-attack": 69,
+        "special-defense": 95,
+        "speed": 36
+      }
+    }
+  },
+  {
+    "dexNum": 428,
+    "species": "lopunny",
+    "variant": "lopunny-mega",
+    "status": "MISSING",
+    "pokeapi": {
+      "baseTotal": 580,
+      "types": [
+        "fighting",
+        "normal"
+      ],
+      "stats": {
+        "hp": 65,
+        "attack": 136,
+        "defense": 94,
+        "special-attack": 54,
+        "special-defense": 96,
+        "speed": 135
+      }
+    }
+  },
+  {
+    "dexNum": 445,
+    "species": "garchomp",
+    "variant": "garchomp-mega",
+    "status": "MISSING",
+    "pokeapi": {
+      "baseTotal": 700,
+      "types": [
+        "dragon",
+        "ground"
+      ],
+      "stats": {
+        "hp": 108,
+        "attack": 170,
+        "defense": 115,
+        "special-attack": 120,
+        "special-defense": 95,
+        "speed": 92
+      }
+    }
+  },
+  {
+    "dexNum": 445,
+    "species": "garchomp",
+    "variant": "garchomp-mega-z",
+    "status": "MISSING",
+    "pokeapi": {
+      "baseTotal": 700,
+      "types": [
+        "dragon"
+      ],
+      "stats": {
+        "hp": 108,
+        "attack": 130,
+        "defense": 85,
+        "special-attack": 141,
+        "special-defense": 85,
+        "speed": 151
+      }
+    }
+  },
+  {
+    "dexNum": 448,
+    "species": "lucario",
+    "variant": "lucario-mega",
+    "status": "MISSING",
+    "pokeapi": {
+      "baseTotal": 625,
+      "types": [
+        "fighting",
+        "steel"
+      ],
+      "stats": {
+        "hp": 70,
+        "attack": 145,
+        "defense": 88,
+        "special-attack": 140,
+        "special-defense": 70,
+        "speed": 112
+      }
+    }
+  },
+  {
+    "dexNum": 448,
+    "species": "lucario",
+    "variant": "lucario-mega-z",
+    "status": "MISSING",
+    "pokeapi": {
+      "baseTotal": 625,
+      "types": [
+        "fighting",
+        "steel"
+      ],
+      "stats": {
+        "hp": 70,
+        "attack": 100,
+        "defense": 70,
+        "special-attack": 164,
+        "special-defense": 70,
+        "speed": 151
+      }
+    }
+  },
+  {
+    "dexNum": 460,
+    "species": "abomasnow",
+    "variant": "abomasnow-mega",
+    "status": "MISSING",
+    "pokeapi": {
+      "baseTotal": 594,
+      "types": [
+        "grass",
+        "ice"
+      ],
+      "stats": {
+        "hp": 90,
+        "attack": 132,
+        "defense": 105,
+        "special-attack": 132,
+        "special-defense": 105,
+        "speed": 30
+      }
+    }
+  },
+  {
+    "dexNum": 475,
+    "species": "gallade",
+    "variant": "gallade-mega",
+    "status": "MISSING",
+    "pokeapi": {
+      "baseTotal": 618,
+      "types": [
+        "fighting",
+        "psychic"
+      ],
+      "stats": {
+        "hp": 68,
+        "attack": 165,
+        "defense": 95,
+        "special-attack": 65,
+        "special-defense": 115,
+        "speed": 110
+      }
+    }
+  },
+  {
+    "dexNum": 478,
+    "species": "froslass",
+    "variant": "froslass-mega",
+    "status": "MISSING",
+    "pokeapi": {
+      "baseTotal": 580,
+      "types": [
+        "ghost",
+        "ice"
+      ],
+      "stats": {
+        "hp": 70,
+        "attack": 80,
+        "defense": 70,
+        "special-attack": 140,
+        "special-defense": 100,
+        "speed": 120
+      }
+    }
+  },
+  {
+    "dexNum": 479,
+    "species": "rotom",
+    "variant": "rotom-heat",
+    "status": "MISSING",
+    "pokeapi": {
+      "baseTotal": 520,
+      "types": [
+        "electric",
+        "fire"
+      ],
+      "stats": {
+        "hp": 50,
+        "attack": 65,
+        "defense": 107,
+        "special-attack": 105,
+        "special-defense": 107,
+        "speed": 86
+      }
+    }
+  },
+  {
+    "dexNum": 479,
+    "species": "rotom",
+    "variant": "rotom-wash",
+    "status": "MISSING",
+    "pokeapi": {
+      "baseTotal": 520,
+      "types": [
+        "electric",
+        "water"
+      ],
+      "stats": {
+        "hp": 50,
+        "attack": 65,
+        "defense": 107,
+        "special-attack": 105,
+        "special-defense": 107,
+        "speed": 86
+      }
+    }
+  },
+  {
+    "dexNum": 479,
+    "species": "rotom",
+    "variant": "rotom-frost",
+    "status": "MISSING",
+    "pokeapi": {
+      "baseTotal": 520,
+      "types": [
+        "electric",
+        "ice"
+      ],
+      "stats": {
+        "hp": 50,
+        "attack": 65,
+        "defense": 107,
+        "special-attack": 105,
+        "special-defense": 107,
+        "speed": 86
+      }
+    }
+  },
+  {
+    "dexNum": 479,
+    "species": "rotom",
+    "variant": "rotom-fan",
+    "status": "MISSING",
+    "pokeapi": {
+      "baseTotal": 520,
+      "types": [
+        "electric",
+        "flying"
+      ],
+      "stats": {
+        "hp": 50,
+        "attack": 65,
+        "defense": 107,
+        "special-attack": 105,
+        "special-defense": 107,
+        "speed": 86
+      }
+    }
+  },
+  {
+    "dexNum": 479,
+    "species": "rotom",
+    "variant": "rotom-mow",
+    "status": "MISSING",
+    "pokeapi": {
+      "baseTotal": 520,
+      "types": [
+        "electric",
+        "grass"
+      ],
+      "stats": {
+        "hp": 50,
+        "attack": 65,
+        "defense": 107,
+        "special-attack": 105,
+        "special-defense": 107,
+        "speed": 86
+      }
+    }
+  },
+  {
+    "dexNum": 485,
+    "species": "heatran",
+    "variant": "heatran-mega",
+    "status": "MISSING",
+    "pokeapi": {
+      "baseTotal": 700,
+      "types": [
+        "fire",
+        "steel"
+      ],
+      "stats": {
+        "hp": 91,
+        "attack": 120,
+        "defense": 106,
+        "special-attack": 175,
+        "special-defense": 141,
+        "speed": 67
+      }
+    }
+  },
+  {
+    "dexNum": 491,
+    "species": "darkrai",
+    "variant": "darkrai-mega",
+    "status": "MISSING",
+    "pokeapi": {
+      "baseTotal": 700,
+      "types": [
+        "dark"
+      ],
+      "stats": {
+        "hp": 70,
+        "attack": 120,
+        "defense": 130,
+        "special-attack": 165,
+        "special-defense": 130,
+        "speed": 85
+      }
+    }
+  },
+  {
+    "dexNum": 492,
+    "species": "shaymin-land",
+    "variant": "shaymin-sky",
+    "status": "present (name match, verify manually)",
+    "pokeapi": {
+      "baseTotal": 600,
+      "types": [
+        "flying",
+        "grass"
+      ],
+      "stats": {
+        "hp": 100,
+        "attack": 103,
+        "defense": 75,
+        "special-attack": 120,
+        "special-defense": 75,
+        "speed": 127
+      }
+    }
+  },
+  {
+    "dexNum": 500,
+    "species": "emboar",
+    "variant": "emboar-mega",
+    "status": "MISSING",
+    "pokeapi": {
+      "baseTotal": 628,
+      "types": [
+        "fighting",
+        "fire"
+      ],
+      "stats": {
+        "hp": 110,
+        "attack": 148,
+        "defense": 75,
+        "special-attack": 110,
+        "special-defense": 110,
+        "speed": 75
+      }
+    }
+  },
+  {
+    "dexNum": 503,
+    "species": "samurott",
+    "variant": "samurott-hisui",
+    "status": "present (name match, verify manually)",
+    "pokeapi": {
+      "baseTotal": 528,
+      "types": [
+        "dark",
+        "water"
+      ],
+      "stats": {
+        "hp": 90,
+        "attack": 108,
+        "defense": 80,
+        "special-attack": 100,
+        "special-defense": 65,
+        "speed": 85
+      }
+    }
+  },
+  {
+    "dexNum": 530,
+    "species": "excadrill",
+    "variant": "excadrill-mega",
+    "status": "MISSING",
+    "pokeapi": {
+      "baseTotal": 608,
+      "types": [
+        "ground",
+        "steel"
+      ],
+      "stats": {
+        "hp": 110,
+        "attack": 165,
+        "defense": 100,
+        "special-attack": 65,
+        "special-defense": 65,
+        "speed": 103
+      }
+    }
+  },
+  {
+    "dexNum": 531,
+    "species": "audino",
+    "variant": "audino-mega",
+    "status": "MISSING",
+    "pokeapi": {
+      "baseTotal": 545,
+      "types": [
+        "fairy",
+        "normal"
+      ],
+      "stats": {
+        "hp": 103,
+        "attack": 60,
+        "defense": 126,
+        "special-attack": 80,
+        "special-defense": 126,
+        "speed": 50
+      }
+    }
+  },
+  {
+    "dexNum": 545,
+    "species": "scolipede",
+    "variant": "scolipede-mega",
+    "status": "MISSING",
+    "pokeapi": {
+      "baseTotal": 585,
+      "types": [
+        "bug",
+        "poison"
+      ],
+      "stats": {
+        "hp": 60,
+        "attack": 140,
+        "defense": 149,
+        "special-attack": 75,
+        "special-defense": 99,
+        "speed": 62
+      }
+    }
+  },
+  {
+    "dexNum": 549,
+    "species": "lilligant",
+    "variant": "lilligant-hisui",
+    "status": "present (name match, verify manually)",
+    "pokeapi": {
+      "baseTotal": 480,
+      "types": [
+        "fighting",
+        "grass"
+      ],
+      "stats": {
+        "hp": 70,
+        "attack": 105,
+        "defense": 75,
+        "special-attack": 50,
+        "special-defense": 75,
+        "speed": 105
+      }
+    }
+  },
+  {
+    "dexNum": 554,
+    "species": "darumaka",
+    "variant": "darumaka-galar",
+    "status": "present (name match, verify manually)",
+    "pokeapi": {
+      "baseTotal": 315,
+      "types": [
+        "ice"
+      ],
+      "stats": {
+        "hp": 70,
+        "attack": 90,
+        "defense": 45,
+        "special-attack": 15,
+        "special-defense": 45,
+        "speed": 50
+      }
+    }
+  },
+  {
+    "dexNum": 555,
+    "species": "darmanitan-standard",
+    "variant": "darmanitan-zen",
+    "status": "present (name match, verify manually)",
+    "pokeapi": {
+      "baseTotal": 540,
+      "types": [
+        "fire",
+        "psychic"
+      ],
+      "stats": {
+        "hp": 105,
+        "attack": 30,
+        "defense": 105,
+        "special-attack": 140,
+        "special-defense": 105,
+        "speed": 55
+      }
+    }
+  },
+  {
+    "dexNum": 555,
+    "species": "darmanitan-standard",
+    "variant": "darmanitan-galar-standard",
+    "status": "present (name match, verify manually)",
+    "pokeapi": {
+      "baseTotal": 480,
+      "types": [
+        "ice"
+      ],
+      "stats": {
+        "hp": 105,
+        "attack": 140,
+        "defense": 55,
+        "special-attack": 30,
+        "special-defense": 55,
+        "speed": 95
+      }
+    }
+  },
+  {
+    "dexNum": 555,
+    "species": "darmanitan-standard",
+    "variant": "darmanitan-galar-zen",
+    "status": "present (name match, verify manually)",
+    "pokeapi": {
+      "baseTotal": 540,
+      "types": [
+        "fire",
+        "ice"
+      ],
+      "stats": {
+        "hp": 105,
+        "attack": 160,
+        "defense": 55,
+        "special-attack": 30,
+        "special-defense": 55,
+        "speed": 135
+      }
+    }
+  },
+  {
+    "dexNum": 560,
+    "species": "scrafty",
+    "variant": "scrafty-mega",
+    "status": "MISSING",
+    "pokeapi": {
+      "baseTotal": 588,
+      "types": [
+        "dark",
+        "fighting"
+      ],
+      "stats": {
+        "hp": 65,
+        "attack": 130,
+        "defense": 135,
+        "special-attack": 55,
+        "special-defense": 135,
+        "speed": 68
+      }
+    }
+  },
+  {
+    "dexNum": 562,
+    "species": "yamask",
+    "variant": "yamask-galar",
+    "status": "present (name match, verify manually)",
+    "pokeapi": {
+      "baseTotal": 303,
+      "types": [
+        "ghost",
+        "ground"
+      ],
+      "stats": {
+        "hp": 38,
+        "attack": 55,
+        "defense": 85,
+        "special-attack": 30,
+        "special-defense": 65,
+        "speed": 30
+      }
+    }
+  },
+  {
+    "dexNum": 570,
+    "species": "zorua",
+    "variant": "zorua-hisui",
+    "status": "present (name match, verify manually)",
+    "pokeapi": {
+      "baseTotal": 330,
+      "types": [
+        "ghost",
+        "normal"
+      ],
+      "stats": {
+        "hp": 35,
+        "attack": 60,
+        "defense": 40,
+        "special-attack": 85,
+        "special-defense": 40,
+        "speed": 70
+      }
+    }
+  },
+  {
+    "dexNum": 571,
+    "species": "zoroark",
+    "variant": "zoroark-hisui",
+    "status": "present (name match, verify manually)",
+    "pokeapi": {
+      "baseTotal": 510,
+      "types": [
+        "ghost",
+        "normal"
+      ],
+      "stats": {
+        "hp": 55,
+        "attack": 100,
+        "defense": 60,
+        "special-attack": 125,
+        "special-defense": 60,
+        "speed": 110
+      }
+    }
+  },
+  {
+    "dexNum": 604,
+    "species": "eelektross",
+    "variant": "eelektross-mega",
+    "status": "MISSING",
+    "pokeapi": {
+      "baseTotal": 615,
+      "types": [
+        "electric"
+      ],
+      "stats": {
+        "hp": 85,
+        "attack": 145,
+        "defense": 80,
+        "special-attack": 135,
+        "special-defense": 90,
+        "speed": 80
+      }
+    }
+  },
+  {
+    "dexNum": 609,
+    "species": "chandelure",
+    "variant": "chandelure-mega",
+    "status": "MISSING",
+    "pokeapi": {
+      "baseTotal": 620,
+      "types": [
+        "fire",
+        "ghost"
+      ],
+      "stats": {
+        "hp": 60,
+        "attack": 75,
+        "defense": 110,
+        "special-attack": 175,
+        "special-defense": 110,
+        "speed": 90
+      }
+    }
+  },
+  {
+    "dexNum": 618,
+    "species": "stunfisk",
+    "variant": "stunfisk-galar",
+    "status": "present (name match, verify manually)",
+    "pokeapi": {
+      "baseTotal": 471,
+      "types": [
+        "ground",
+        "steel"
+      ],
+      "stats": {
+        "hp": 109,
+        "attack": 81,
+        "defense": 99,
+        "special-attack": 66,
+        "special-defense": 84,
+        "speed": 32
+      }
+    }
+  },
+  {
+    "dexNum": 623,
+    "species": "golurk",
+    "variant": "golurk-mega",
+    "status": "MISSING",
+    "pokeapi": {
+      "baseTotal": 583,
+      "types": [
+        "ghost",
+        "ground"
+      ],
+      "stats": {
+        "hp": 89,
+        "attack": 159,
+        "defense": 105,
+        "special-attack": 70,
+        "special-defense": 105,
+        "speed": 55
+      }
+    }
+  },
+  {
+    "dexNum": 628,
+    "species": "braviary",
+    "variant": "braviary-hisui",
+    "status": "present (name match, verify manually)",
+    "pokeapi": {
+      "baseTotal": 510,
+      "types": [
+        "flying",
+        "psychic"
+      ],
+      "stats": {
+        "hp": 110,
+        "attack": 83,
+        "defense": 70,
+        "special-attack": 112,
+        "special-defense": 70,
+        "speed": 65
+      }
+    }
+  },
+  {
+    "dexNum": 646,
+    "species": "kyurem",
+    "variant": "kyurem-black",
+    "status": "MISSING",
+    "pokeapi": {
+      "baseTotal": 700,
+      "types": [
+        "dragon",
+        "ice"
+      ],
+      "stats": {
+        "hp": 125,
+        "attack": 170,
+        "defense": 100,
+        "special-attack": 120,
+        "special-defense": 90,
+        "speed": 95
+      }
+    }
+  },
+  {
+    "dexNum": 646,
+    "species": "kyurem",
+    "variant": "kyurem-white",
+    "status": "MISSING",
+    "pokeapi": {
+      "baseTotal": 700,
+      "types": [
+        "dragon",
+        "ice"
+      ],
+      "stats": {
+        "hp": 125,
+        "attack": 120,
+        "defense": 90,
+        "special-attack": 170,
+        "special-defense": 100,
+        "speed": 95
+      }
+    }
+  },
+  {
+    "dexNum": 648,
+    "species": "meloetta-aria",
+    "variant": "meloetta-pirouette",
+    "status": "present (name match, verify manually)",
+    "pokeapi": {
+      "baseTotal": 600,
+      "types": [
+        "fighting",
+        "normal"
+      ],
+      "stats": {
+        "hp": 100,
+        "attack": 128,
+        "defense": 90,
+        "special-attack": 77,
+        "special-defense": 77,
+        "speed": 128
+      }
+    }
+  },
+  {
+    "dexNum": 652,
+    "species": "chesnaught",
+    "variant": "chesnaught-mega",
+    "status": "MISSING",
+    "pokeapi": {
+      "baseTotal": 630,
+      "types": [
+        "fighting",
+        "grass"
+      ],
+      "stats": {
+        "hp": 88,
+        "attack": 137,
+        "defense": 172,
+        "special-attack": 74,
+        "special-defense": 115,
+        "speed": 44
+      }
+    }
+  },
+  {
+    "dexNum": 655,
+    "species": "delphox",
+    "variant": "delphox-mega",
+    "status": "MISSING",
+    "pokeapi": {
+      "baseTotal": 634,
+      "types": [
+        "fire",
+        "psychic"
+      ],
+      "stats": {
+        "hp": 75,
+        "attack": 69,
+        "defense": 72,
+        "special-attack": 159,
+        "special-defense": 125,
+        "speed": 134
+      }
+    }
+  },
+  {
+    "dexNum": 658,
+    "species": "greninja",
+    "variant": "greninja-ash",
+    "status": "MISSING",
+    "pokeapi": {
+      "baseTotal": 640,
+      "types": [
+        "dark",
+        "water"
+      ],
+      "stats": {
+        "hp": 72,
+        "attack": 145,
+        "defense": 67,
+        "special-attack": 153,
+        "special-defense": 71,
+        "speed": 132
+      }
+    }
+  },
+  {
+    "dexNum": 658,
+    "species": "greninja",
+    "variant": "greninja-mega",
+    "status": "MISSING",
+    "pokeapi": {
+      "baseTotal": 630,
+      "types": [
+        "dark",
+        "water"
+      ],
+      "stats": {
+        "hp": 72,
+        "attack": 125,
+        "defense": 77,
+        "special-attack": 133,
+        "special-defense": 81,
+        "speed": 142
+      }
+    }
+  },
+  {
+    "dexNum": 668,
+    "species": "pyroar-male",
+    "variant": "pyroar-mega",
+    "status": "present (name match, verify manually)",
+    "pokeapi": {
+      "baseTotal": 607,
+      "types": [
+        "fire",
+        "normal"
+      ],
+      "stats": {
+        "hp": 86,
+        "attack": 88,
+        "defense": 92,
+        "special-attack": 129,
+        "special-defense": 86,
+        "speed": 126
+      }
+    }
+  },
+  {
+    "dexNum": 670,
+    "species": "floette",
+    "variant": "floette-eternal",
+    "status": "MISSING",
+    "pokeapi": {
+      "baseTotal": 551,
+      "types": [
+        "fairy"
+      ],
+      "stats": {
+        "hp": 74,
+        "attack": 65,
+        "defense": 67,
+        "special-attack": 125,
+        "special-defense": 128,
+        "speed": 92
+      }
+    }
+  },
+  {
+    "dexNum": 670,
+    "species": "floette",
+    "variant": "floette-mega",
+    "status": "MISSING",
+    "pokeapi": {
+      "baseTotal": 651,
+      "types": [
+        "fairy"
+      ],
+      "stats": {
+        "hp": 74,
+        "attack": 85,
+        "defense": 87,
+        "special-attack": 155,
+        "special-defense": 148,
+        "speed": 102
+      }
+    }
+  },
+  {
+    "dexNum": 678,
+    "species": "meowstic-male",
+    "variant": "meowstic-male-mega",
+    "status": "MISSING",
+    "pokeapi": {
+      "baseTotal": 566,
+      "types": [
+        "psychic"
+      ],
+      "stats": {
+        "hp": 74,
+        "attack": 48,
+        "defense": 76,
+        "special-attack": 143,
+        "special-defense": 101,
+        "speed": 124
+      }
+    }
+  },
+  {
+    "dexNum": 678,
+    "species": "meowstic-male",
+    "variant": "meowstic-female-mega",
+    "status": "present (name match, verify manually)",
+    "pokeapi": {
+      "baseTotal": 566,
+      "types": [
+        "psychic"
+      ],
+      "stats": {
+        "hp": 74,
+        "attack": 48,
+        "defense": 76,
+        "special-attack": 143,
+        "special-defense": 101,
+        "speed": 124
+      }
+    }
+  },
+  {
+    "dexNum": 687,
+    "species": "malamar",
+    "variant": "malamar-mega",
+    "status": "MISSING",
+    "pokeapi": {
+      "baseTotal": 582,
+      "types": [
+        "dark",
+        "psychic"
+      ],
+      "stats": {
+        "hp": 86,
+        "attack": 102,
+        "defense": 88,
+        "special-attack": 98,
+        "special-defense": 120,
+        "speed": 88
+      }
+    }
+  },
+  {
+    "dexNum": 689,
+    "species": "barbaracle",
+    "variant": "barbaracle-mega",
+    "status": "MISSING",
+    "pokeapi": {
+      "baseTotal": 600,
+      "types": [
+        "fighting",
+        "rock"
+      ],
+      "stats": {
+        "hp": 72,
+        "attack": 140,
+        "defense": 130,
+        "special-attack": 64,
+        "special-defense": 106,
+        "speed": 88
+      }
+    }
+  },
+  {
+    "dexNum": 691,
+    "species": "dragalge",
+    "variant": "dragalge-mega",
+    "status": "MISSING",
+    "pokeapi": {
+      "baseTotal": 594,
+      "types": [
+        "dragon",
+        "poison"
+      ],
+      "stats": {
+        "hp": 65,
+        "attack": 85,
+        "defense": 105,
+        "special-attack": 132,
+        "special-defense": 163,
+        "speed": 44
+      }
+    }
+  },
+  {
+    "dexNum": 701,
+    "species": "hawlucha",
+    "variant": "hawlucha-mega",
+    "status": "MISSING",
+    "pokeapi": {
+      "baseTotal": 600,
+      "types": [
+        "fighting",
+        "flying"
+      ],
+      "stats": {
+        "hp": 78,
+        "attack": 137,
+        "defense": 100,
+        "special-attack": 74,
+        "special-defense": 93,
+        "speed": 118
+      }
+    }
+  },
+  {
+    "dexNum": 705,
+    "species": "sliggoo",
+    "variant": "sliggoo-hisui",
+    "status": "present (name match, verify manually)",
+    "pokeapi": {
+      "baseTotal": 452,
+      "types": [
+        "dragon",
+        "steel"
+      ],
+      "stats": {
+        "hp": 58,
+        "attack": 75,
+        "defense": 83,
+        "special-attack": 83,
+        "special-defense": 113,
+        "speed": 40
+      }
+    }
+  },
+  {
+    "dexNum": 706,
+    "species": "goodra",
+    "variant": "goodra-hisui",
+    "status": "present (name match, verify manually)",
+    "pokeapi": {
+      "baseTotal": 600,
+      "types": [
+        "dragon",
+        "steel"
+      ],
+      "stats": {
+        "hp": 80,
+        "attack": 100,
+        "defense": 100,
+        "special-attack": 110,
+        "special-defense": 150,
+        "speed": 60
+      }
+    }
+  },
+  {
+    "dexNum": 713,
+    "species": "avalugg",
+    "variant": "avalugg-hisui",
+    "status": "present (name match, verify manually)",
+    "pokeapi": {
+      "baseTotal": 514,
+      "types": [
+        "ice",
+        "rock"
+      ],
+      "stats": {
+        "hp": 95,
+        "attack": 127,
+        "defense": 184,
+        "special-attack": 34,
+        "special-defense": 36,
+        "speed": 38
+      }
+    }
+  },
+  {
+    "dexNum": 718,
+    "species": "zygarde-50",
+    "variant": "zygarde-10-power-construct",
+    "status": "present (name match, verify manually)",
+    "pokeapi": {
+      "baseTotal": 486,
+      "types": [
+        "dragon",
+        "ground"
+      ],
+      "stats": {
+        "hp": 54,
+        "attack": 100,
+        "defense": 71,
+        "special-attack": 61,
+        "special-defense": 85,
+        "speed": 115
+      }
+    }
+  },
+  {
+    "dexNum": 718,
+    "species": "zygarde-50",
+    "variant": "zygarde-complete",
+    "status": "present (name match, verify manually)",
+    "pokeapi": {
+      "baseTotal": 708,
+      "types": [
+        "dragon",
+        "ground"
+      ],
+      "stats": {
+        "hp": 216,
+        "attack": 100,
+        "defense": 121,
+        "special-attack": 91,
+        "special-defense": 95,
+        "speed": 85
+      }
+    }
+  },
+  {
+    "dexNum": 718,
+    "species": "zygarde-50",
+    "variant": "zygarde-10",
+    "status": "present (name match, verify manually)",
+    "pokeapi": {
+      "baseTotal": 486,
+      "types": [
+        "dragon",
+        "ground"
+      ],
+      "stats": {
+        "hp": 54,
+        "attack": 100,
+        "defense": 71,
+        "special-attack": 61,
+        "special-defense": 85,
+        "speed": 115
+      }
+    }
+  },
+  {
+    "dexNum": 718,
+    "species": "zygarde-50",
+    "variant": "zygarde-mega",
+    "status": "present (name match, verify manually)",
+    "pokeapi": {
+      "baseTotal": 778,
+      "types": [
+        "dragon",
+        "ground"
+      ],
+      "stats": {
+        "hp": 216,
+        "attack": 70,
+        "defense": 91,
+        "special-attack": 216,
+        "special-defense": 85,
+        "speed": 100
+      }
+    }
+  },
+  {
+    "dexNum": 719,
+    "species": "diancie",
+    "variant": "diancie-mega",
+    "status": "MISSING",
+    "pokeapi": {
+      "baseTotal": 700,
+      "types": [
+        "fairy",
+        "rock"
+      ],
+      "stats": {
+        "hp": 50,
+        "attack": 160,
+        "defense": 110,
+        "special-attack": 160,
+        "special-defense": 110,
+        "speed": 110
+      }
+    }
+  },
+  {
+    "dexNum": 720,
+    "species": "hoopa",
+    "variant": "hoopa-unbound",
+    "status": "MISSING",
+    "pokeapi": {
+      "baseTotal": 680,
+      "types": [
+        "dark",
+        "psychic"
+      ],
+      "stats": {
+        "hp": 80,
+        "attack": 160,
+        "defense": 60,
+        "special-attack": 170,
+        "special-defense": 130,
+        "speed": 80
+      }
+    }
+  },
+  {
+    "dexNum": 724,
+    "species": "decidueye",
+    "variant": "decidueye-hisui",
+    "status": "present (name match, verify manually)",
+    "pokeapi": {
+      "baseTotal": 530,
+      "types": [
+        "fighting",
+        "grass"
+      ],
+      "stats": {
+        "hp": 88,
+        "attack": 112,
+        "defense": 80,
+        "special-attack": 95,
+        "special-defense": 95,
+        "speed": 60
+      }
+    }
+  },
+  {
+    "dexNum": 740,
+    "species": "crabominable",
+    "variant": "crabominable-mega",
+    "status": "MISSING",
+    "pokeapi": {
+      "baseTotal": 578,
+      "types": [
+        "fighting",
+        "ice"
+      ],
+      "stats": {
+        "hp": 97,
+        "attack": 157,
+        "defense": 122,
+        "special-attack": 62,
+        "special-defense": 107,
+        "speed": 33
+      }
+    }
+  },
+  {
+    "dexNum": 741,
+    "species": "oricorio-baile",
+    "variant": "oricorio-pom-pom",
+    "status": "present (name match, verify manually)",
+    "pokeapi": {
+      "baseTotal": 476,
+      "types": [
+        "electric",
+        "flying"
+      ],
+      "stats": {
+        "hp": 75,
+        "attack": 70,
+        "defense": 70,
+        "special-attack": 98,
+        "special-defense": 70,
+        "speed": 93
+      }
+    }
+  },
+  {
+    "dexNum": 741,
+    "species": "oricorio-baile",
+    "variant": "oricorio-pau",
+    "status": "present (name match, verify manually)",
+    "pokeapi": {
+      "baseTotal": 476,
+      "types": [
+        "flying",
+        "psychic"
+      ],
+      "stats": {
+        "hp": 75,
+        "attack": 70,
+        "defense": 70,
+        "special-attack": 98,
+        "special-defense": 70,
+        "speed": 93
+      }
+    }
+  },
+  {
+    "dexNum": 741,
+    "species": "oricorio-baile",
+    "variant": "oricorio-sensu",
+    "status": "present (name match, verify manually)",
+    "pokeapi": {
+      "baseTotal": 476,
+      "types": [
+        "flying",
+        "ghost"
+      ],
+      "stats": {
+        "hp": 75,
+        "attack": 70,
+        "defense": 70,
+        "special-attack": 98,
+        "special-defense": 70,
+        "speed": 93
+      }
+    }
+  },
+  {
+    "dexNum": 746,
+    "species": "wishiwashi-solo",
+    "variant": "wishiwashi-school",
+    "status": "present (name match, verify manually)",
+    "pokeapi": {
+      "baseTotal": 620,
+      "types": [
+        "water"
+      ],
+      "stats": {
+        "hp": 45,
+        "attack": 140,
+        "defense": 130,
+        "special-attack": 140,
+        "special-defense": 135,
+        "speed": 30
+      }
+    }
+  },
+  {
+    "dexNum": 768,
+    "species": "golisopod",
+    "variant": "golisopod-mega",
+    "status": "MISSING",
+    "pokeapi": {
+      "baseTotal": 630,
+      "types": [
+        "bug",
+        "steel"
+      ],
+      "stats": {
+        "hp": 75,
+        "attack": 150,
+        "defense": 175,
+        "special-attack": 70,
+        "special-defense": 120,
+        "speed": 40
+      }
+    }
+  },
+  {
+    "dexNum": 774,
+    "species": "minior-red-meteor",
+    "variant": "minior-red",
+    "status": "present (name match, verify manually)",
+    "pokeapi": {
+      "baseTotal": 500,
+      "types": [
+        "flying",
+        "rock"
+      ],
+      "stats": {
+        "hp": 60,
+        "attack": 100,
+        "defense": 60,
+        "special-attack": 100,
+        "special-defense": 60,
+        "speed": 120
+      }
+    }
+  },
+  {
+    "dexNum": 774,
+    "species": "minior-red-meteor",
+    "variant": "minior-orange",
+    "status": "present (name match, verify manually)",
+    "pokeapi": {
+      "baseTotal": 500,
+      "types": [
+        "flying",
+        "rock"
+      ],
+      "stats": {
+        "hp": 60,
+        "attack": 100,
+        "defense": 60,
+        "special-attack": 100,
+        "special-defense": 60,
+        "speed": 120
+      }
+    }
+  },
+  {
+    "dexNum": 774,
+    "species": "minior-red-meteor",
+    "variant": "minior-yellow",
+    "status": "present (name match, verify manually)",
+    "pokeapi": {
+      "baseTotal": 500,
+      "types": [
+        "flying",
+        "rock"
+      ],
+      "stats": {
+        "hp": 60,
+        "attack": 100,
+        "defense": 60,
+        "special-attack": 100,
+        "special-defense": 60,
+        "speed": 120
+      }
+    }
+  },
+  {
+    "dexNum": 774,
+    "species": "minior-red-meteor",
+    "variant": "minior-green",
+    "status": "present (name match, verify manually)",
+    "pokeapi": {
+      "baseTotal": 500,
+      "types": [
+        "flying",
+        "rock"
+      ],
+      "stats": {
+        "hp": 60,
+        "attack": 100,
+        "defense": 60,
+        "special-attack": 100,
+        "special-defense": 60,
+        "speed": 120
+      }
+    }
+  },
+  {
+    "dexNum": 774,
+    "species": "minior-red-meteor",
+    "variant": "minior-blue",
+    "status": "present (name match, verify manually)",
+    "pokeapi": {
+      "baseTotal": 500,
+      "types": [
+        "flying",
+        "rock"
+      ],
+      "stats": {
+        "hp": 60,
+        "attack": 100,
+        "defense": 60,
+        "special-attack": 100,
+        "special-defense": 60,
+        "speed": 120
+      }
+    }
+  },
+  {
+    "dexNum": 774,
+    "species": "minior-red-meteor",
+    "variant": "minior-indigo",
+    "status": "present (name match, verify manually)",
+    "pokeapi": {
+      "baseTotal": 500,
+      "types": [
+        "flying",
+        "rock"
+      ],
+      "stats": {
+        "hp": 60,
+        "attack": 100,
+        "defense": 60,
+        "special-attack": 100,
+        "special-defense": 60,
+        "speed": 120
+      }
+    }
+  },
+  {
+    "dexNum": 774,
+    "species": "minior-red-meteor",
+    "variant": "minior-violet",
+    "status": "present (name match, verify manually)",
+    "pokeapi": {
+      "baseTotal": 500,
+      "types": [
+        "flying",
+        "rock"
+      ],
+      "stats": {
+        "hp": 60,
+        "attack": 100,
+        "defense": 60,
+        "special-attack": 100,
+        "special-defense": 60,
+        "speed": 120
+      }
+    }
+  },
+  {
+    "dexNum": 780,
+    "species": "drampa",
+    "variant": "drampa-mega",
+    "status": "MISSING",
+    "pokeapi": {
+      "baseTotal": 585,
+      "types": [
+        "dragon",
+        "normal"
+      ],
+      "stats": {
+        "hp": 78,
+        "attack": 85,
+        "defense": 110,
+        "special-attack": 160,
+        "special-defense": 116,
+        "speed": 36
+      }
+    }
+  },
+  {
+    "dexNum": 800,
+    "species": "necrozma",
+    "variant": "necrozma-dusk",
+    "status": "MISSING",
+    "pokeapi": {
+      "baseTotal": 680,
+      "types": [
+        "psychic",
+        "steel"
+      ],
+      "stats": {
+        "hp": 97,
+        "attack": 157,
+        "defense": 127,
+        "special-attack": 113,
+        "special-defense": 109,
+        "speed": 77
+      }
+    }
+  },
+  {
+    "dexNum": 800,
+    "species": "necrozma",
+    "variant": "necrozma-dawn",
+    "status": "MISSING",
+    "pokeapi": {
+      "baseTotal": 680,
+      "types": [
+        "ghost",
+        "psychic"
+      ],
+      "stats": {
+        "hp": 97,
+        "attack": 113,
+        "defense": 109,
+        "special-attack": 157,
+        "special-defense": 127,
+        "speed": 77
+      }
+    }
+  },
+  {
+    "dexNum": 800,
+    "species": "necrozma",
+    "variant": "necrozma-ultra",
+    "status": "MISSING",
+    "pokeapi": {
+      "baseTotal": 754,
+      "types": [
+        "dragon",
+        "psychic"
+      ],
+      "stats": {
+        "hp": 97,
+        "attack": 167,
+        "defense": 97,
+        "special-attack": 167,
+        "special-defense": 97,
+        "speed": 129
+      }
+    }
+  },
+  {
+    "dexNum": 801,
+    "species": "magearna",
+    "variant": "magearna-mega",
+    "status": "MISSING",
+    "pokeapi": {
+      "baseTotal": 700,
+      "types": [
+        "fairy",
+        "steel"
+      ],
+      "stats": {
+        "hp": 80,
+        "attack": 125,
+        "defense": 115,
+        "special-attack": 170,
+        "special-defense": 115,
+        "speed": 95
+      }
+    }
+  },
+  {
+    "dexNum": 801,
+    "species": "magearna",
+    "variant": "magearna-original-mega",
+    "status": "MISSING",
+    "pokeapi": {
+      "baseTotal": 700,
+      "types": [
+        "fairy",
+        "steel"
+      ],
+      "stats": {
+        "hp": 80,
+        "attack": 125,
+        "defense": 115,
+        "special-attack": 170,
+        "special-defense": 115,
+        "speed": 95
+      }
+    }
+  },
+  {
+    "dexNum": 807,
+    "species": "zeraora",
+    "variant": "zeraora-mega",
+    "status": "MISSING",
+    "pokeapi": {
+      "baseTotal": 700,
+      "types": [
+        "electric"
+      ],
+      "stats": {
+        "hp": 88,
+        "attack": 157,
+        "defense": 75,
+        "special-attack": 147,
+        "special-defense": 80,
+        "speed": 153
+      }
+    }
+  },
+  {
+    "dexNum": 870,
+    "species": "falinks",
+    "variant": "falinks-mega",
+    "status": "MISSING",
+    "pokeapi": {
+      "baseTotal": 570,
+      "types": [
+        "fighting"
+      ],
+      "stats": {
+        "hp": 65,
+        "attack": 135,
+        "defense": 135,
+        "special-attack": 70,
+        "special-defense": 65,
+        "speed": 100
+      }
+    }
+  },
+  {
+    "dexNum": 888,
+    "species": "zacian",
+    "variant": "zacian-crowned",
+    "status": "MISSING",
+    "pokeapi": {
+      "baseTotal": 700,
+      "types": [
+        "fairy",
+        "steel"
+      ],
+      "stats": {
+        "hp": 92,
+        "attack": 150,
+        "defense": 115,
+        "special-attack": 80,
+        "special-defense": 115,
+        "speed": 148
+      }
+    }
+  },
+  {
+    "dexNum": 888,
+    "species": "zacian",
+    "variant": "OUR ROW \"Zacian\" (id=945)",
+    "status": "STAT_MISMATCH_WITH_POKEAPI_DEFAULT",
+    "ourStats": {
+      "hp": 92,
+      "attack": 130,
+      "defense": 115,
+      "special-attack": 80,
+      "special-defense": 115,
+      "speed": 138
+    },
+    "pokeapiDefaultStats": {
+      "hp": 92,
+      "attack": 120,
+      "defense": 115,
+      "special-attack": 80,
+      "special-defense": 115,
+      "speed": 138
+    }
+  },
+  {
+    "dexNum": 889,
+    "species": "zamazenta",
+    "variant": "zamazenta-crowned",
+    "status": "MISSING",
+    "pokeapi": {
+      "baseTotal": 700,
+      "types": [
+        "fighting",
+        "steel"
+      ],
+      "stats": {
+        "hp": 92,
+        "attack": 120,
+        "defense": 140,
+        "special-attack": 80,
+        "special-defense": 140,
+        "speed": 128
+      }
+    }
+  },
+  {
+    "dexNum": 889,
+    "species": "zamazenta",
+    "variant": "OUR ROW \"Zamazenta\" (id=946)",
+    "status": "STAT_MISMATCH_WITH_POKEAPI_DEFAULT",
+    "ourStats": {
+      "hp": 92,
+      "attack": 130,
+      "defense": 115,
+      "special-attack": 80,
+      "special-defense": 115,
+      "speed": 138
+    },
+    "pokeapiDefaultStats": {
+      "hp": 92,
+      "attack": 120,
+      "defense": 115,
+      "special-attack": 80,
+      "special-defense": 115,
+      "speed": 138
+    }
+  },
+  {
+    "dexNum": 890,
+    "species": "eternatus",
+    "variant": "eternatus-eternamax",
+    "status": "MISSING",
+    "pokeapi": {
+      "baseTotal": 1125,
+      "types": [
+        "dragon",
+        "poison"
+      ],
+      "stats": {
+        "hp": 255,
+        "attack": 115,
+        "defense": 250,
+        "special-attack": 125,
+        "special-defense": 250,
+        "speed": 130
+      }
+    }
+  },
+  {
+    "dexNum": 892,
+    "species": "urshifu-single-strike",
+    "variant": "urshifu-rapid-strike",
+    "status": "present (name match, verify manually)",
+    "pokeapi": {
+      "baseTotal": 550,
+      "types": [
+        "fighting",
+        "water"
+      ],
+      "stats": {
+        "hp": 100,
+        "attack": 130,
+        "defense": 100,
+        "special-attack": 63,
+        "special-defense": 60,
+        "speed": 97
+      }
+    }
+  },
+  {
+    "dexNum": 892,
+    "species": "urshifu-single-strike",
+    "variant": "urshifu-rapid-strike-gmax",
+    "status": "present (name match, verify manually)",
+    "pokeapi": {
+      "baseTotal": 550,
+      "types": [
+        "fighting",
+        "water"
+      ],
+      "stats": {
+        "hp": 100,
+        "attack": 130,
+        "defense": 100,
+        "special-attack": 63,
+        "special-defense": 60,
+        "speed": 97
+      }
+    }
+  },
+  {
+    "dexNum": 898,
+    "species": "calyrex",
+    "variant": "calyrex-ice",
+    "status": "MISSING",
+    "pokeapi": {
+      "baseTotal": 680,
+      "types": [
+        "ice",
+        "psychic"
+      ],
+      "stats": {
+        "hp": 100,
+        "attack": 165,
+        "defense": 150,
+        "special-attack": 85,
+        "special-defense": 130,
+        "speed": 50
+      }
+    }
+  },
+  {
+    "dexNum": 898,
+    "species": "calyrex",
+    "variant": "calyrex-shadow",
+    "status": "MISSING",
+    "pokeapi": {
+      "baseTotal": 680,
+      "types": [
+        "ghost",
+        "psychic"
+      ],
+      "stats": {
+        "hp": 100,
+        "attack": 85,
+        "defense": 80,
+        "special-attack": 165,
+        "special-defense": 100,
+        "speed": 150
+      }
+    }
+  },
+  {
+    "dexNum": 901,
+    "species": "ursaluna",
+    "variant": "ursaluna-bloodmoon",
+    "status": "MISSING",
+    "pokeapi": {
+      "baseTotal": 555,
+      "types": [
+        "ground",
+        "normal"
+      ],
+      "stats": {
+        "hp": 113,
+        "attack": 70,
+        "defense": 120,
+        "special-attack": 135,
+        "special-defense": 65,
+        "speed": 52
+      }
+    }
+  },
+  {
+    "dexNum": 952,
+    "species": "scovillain",
+    "variant": "scovillain-mega",
+    "status": "MISSING",
+    "pokeapi": {
+      "baseTotal": 586,
+      "types": [
+        "fire",
+        "grass"
+      ],
+      "stats": {
+        "hp": 65,
+        "attack": 138,
+        "defense": 85,
+        "special-attack": 138,
+        "special-defense": 85,
+        "speed": 75
+      }
+    }
+  },
+  {
+    "dexNum": 964,
+    "species": "palafin-zero",
+    "variant": "palafin-hero",
+    "status": "present (name match, verify manually)",
+    "pokeapi": {
+      "baseTotal": 650,
+      "types": [
+        "water"
+      ],
+      "stats": {
+        "hp": 100,
+        "attack": 160,
+        "defense": 97,
+        "special-attack": 106,
+        "special-defense": 87,
+        "speed": 100
+      }
+    }
+  },
+  {
+    "dexNum": 964,
+    "species": "palafin-zero",
+    "variant": "OUR ROW \"Palafin\" (id=1021)",
+    "status": "STAT_MISMATCH_WITH_POKEAPI_DEFAULT",
+    "ourStats": {
+      "hp": 100,
+      "attack": 160,
+      "defense": 97,
+      "special-attack": 106,
+      "special-defense": 87,
+      "speed": 100
+    },
+    "pokeapiDefaultStats": {
+      "hp": 100,
+      "attack": 70,
+      "defense": 72,
+      "special-attack": 53,
+      "special-defense": 62,
+      "speed": 100
+    }
+  },
+  {
+    "dexNum": 970,
+    "species": "glimmora",
+    "variant": "glimmora-mega",
+    "status": "MISSING",
+    "pokeapi": {
+      "baseTotal": 625,
+      "types": [
+        "poison",
+        "rock"
+      ],
+      "stats": {
+        "hp": 83,
+        "attack": 90,
+        "defense": 105,
+        "special-attack": 150,
+        "special-defense": 96,
+        "speed": 101
+      }
+    }
+  },
+  {
+    "dexNum": 978,
+    "species": "tatsugiri-curly",
+    "variant": "tatsugiri-curly-mega",
+    "status": "MISSING",
+    "pokeapi": {
+      "baseTotal": 575,
+      "types": [
+        "dragon",
+        "water"
+      ],
+      "stats": {
+        "hp": 68,
+        "attack": 65,
+        "defense": 90,
+        "special-attack": 135,
+        "special-defense": 125,
+        "speed": 92
+      }
+    }
+  },
+  {
+    "dexNum": 978,
+    "species": "tatsugiri-curly",
+    "variant": "tatsugiri-droopy-mega",
+    "status": "present (name match, verify manually)",
+    "pokeapi": {
+      "baseTotal": 575,
+      "types": [
+        "dragon",
+        "water"
+      ],
+      "stats": {
+        "hp": 68,
+        "attack": 65,
+        "defense": 90,
+        "special-attack": 135,
+        "special-defense": 125,
+        "speed": 92
+      }
+    }
+  },
+  {
+    "dexNum": 978,
+    "species": "tatsugiri-curly",
+    "variant": "tatsugiri-stretchy-mega",
+    "status": "present (name match, verify manually)",
+    "pokeapi": {
+      "baseTotal": 575,
+      "types": [
+        "dragon",
+        "water"
+      ],
+      "stats": {
+        "hp": 68,
+        "attack": 65,
+        "defense": 90,
+        "special-attack": 135,
+        "special-defense": 125,
+        "speed": 92
+      }
+    }
+  },
+  {
+    "dexNum": 998,
+    "species": "baxcalibur",
+    "variant": "baxcalibur-mega",
+    "status": "MISSING",
+    "pokeapi": {
+      "baseTotal": 700,
+      "types": [
+        "dragon",
+        "ice"
+      ],
+      "stats": {
+        "hp": 115,
+        "attack": 175,
+        "defense": 117,
+        "special-attack": 105,
+        "special-defense": 101,
+        "speed": 87
+      }
+    }
+  }
+]

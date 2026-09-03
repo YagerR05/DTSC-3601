@@ -1,0 +1,218 @@
+[
+  {
+    "id": 37,
+    "name": "Nidoran♂",
+    "slug": "nidoran-m",
+    "confidence": "generic"
+  },
+  {
+    "id": 151,
+    "name": "Galarian Mr. Mime",
+    "slug": "mr-mime-galar",
+    "confidence": "pattern"
+  },
+  {
+    "id": 152,
+    "name": "Mr. Mime",
+    "slug": "mr-mime",
+    "confidence": "generic"
+  },
+  {
+    "id": 158,
+    "name": "Paldean Tauros (Aqua Breed)",
+    "slug": "tauros-aqua-breed-paldea",
+    "confidence": "pattern"
+  },
+  {
+    "id": 159,
+    "name": "Paldean Tauros (Blaze Breed)",
+    "slug": "tauros-blaze-breed-paldea",
+    "confidence": "pattern"
+  },
+  {
+    "id": 160,
+    "name": "Paldean Tauros (Combat Breed)",
+    "slug": "tauros-combat-breed-paldea",
+    "confidence": "pattern"
+  },
+  {
+    "id": 292,
+    "name": "Ho-Oh",
+    "slug": "ho-oh",
+    "confidence": "generic"
+  },
+  {
+    "id": 483,
+    "name": "Mime Jr.",
+    "slug": "mime-jr",
+    "confidence": "generic"
+  },
+  {
+    "id": 722,
+    "name": "Flabébé",
+    "slug": "flab-b",
+    "confidence": "generic"
+  },
+  {
+    "id": 829,
+    "name": "Type: Null",
+    "slug": "type-null",
+    "confidence": "generic"
+  },
+  {
+    "id": 839,
+    "name": "Jangmo-o",
+    "slug": "jangmo-o",
+    "confidence": "generic"
+  },
+  {
+    "id": 840,
+    "name": "Hakamo-o",
+    "slug": "hakamo-o",
+    "confidence": "generic"
+  },
+  {
+    "id": 841,
+    "name": "Kommo-o",
+    "slug": "kommo-o",
+    "confidence": "generic"
+  },
+  {
+    "id": 842,
+    "name": "Tapu Koko",
+    "slug": "tapu-koko",
+    "confidence": "generic"
+  },
+  {
+    "id": 843,
+    "name": "Tapu Lele",
+    "slug": "tapu-lele",
+    "confidence": "generic"
+  },
+  {
+    "id": 844,
+    "name": "Tapu Bulu",
+    "slug": "tapu-bulu",
+    "confidence": "generic"
+  },
+  {
+    "id": 845,
+    "name": "Tapu Fini",
+    "slug": "tapu-fini",
+    "confidence": "generic"
+  },
+  {
+    "id": 1041,
+    "name": "Great Tusk",
+    "slug": "great-tusk",
+    "confidence": "generic"
+  },
+  {
+    "id": 1042,
+    "name": "Scream Tail",
+    "slug": "scream-tail",
+    "confidence": "generic"
+  },
+  {
+    "id": 1043,
+    "name": "Brute Bonnet",
+    "slug": "brute-bonnet",
+    "confidence": "generic"
+  },
+  {
+    "id": 1044,
+    "name": "Flutter Mane",
+    "slug": "flutter-mane",
+    "confidence": "generic"
+  },
+  {
+    "id": 1045,
+    "name": "Slither Wing",
+    "slug": "slither-wing",
+    "confidence": "generic"
+  },
+  {
+    "id": 1046,
+    "name": "Sandy Shocks",
+    "slug": "sandy-shocks",
+    "confidence": "generic"
+  },
+  {
+    "id": 1047,
+    "name": "Iron Treads",
+    "slug": "iron-treads",
+    "confidence": "generic"
+  },
+  {
+    "id": 1048,
+    "name": "Iron Bundle",
+    "slug": "iron-bundle",
+    "confidence": "generic"
+  },
+  {
+    "id": 1049,
+    "name": "Iron Hands",
+    "slug": "iron-hands",
+    "confidence": "generic"
+  },
+  {
+    "id": 1050,
+    "name": "Iron Jugulis",
+    "slug": "iron-jugulis",
+    "confidence": "generic"
+  },
+  {
+    "id": 1051,
+    "name": "Iron Moth",
+    "slug": "iron-moth",
+    "confidence": "generic"
+  },
+  {
+    "id": 1052,
+    "name": "Iron Thorns",
+    "slug": "iron-thorns",
+    "confidence": "generic"
+  },
+  {
+    "id": 1058,
+    "name": "Wo-Chien",
+    "slug": "wo-chien",
+    "confidence": "generic"
+  },
+  {
+    "id": 1059,
+    "name": "Chien-Pao",
+    "slug": "chien-pao",
+    "confidence": "generic"
+  },
+  {
+    "id": 1060,
+    "name": "Ting-Lu",
+    "slug": "ting-lu",
+    "confidence": "generic"
+  },
+  {
+    "id": 1061,
+    "name": "Chi-Yu",
+    "slug": "chi-yu",
+    "confidence": "generic"
+  },
+  {
+    "id": 1062,
+    "name": "Roaring Moon",
+    "slug": "roaring-moon",
+    "confidence": "generic"
+  },
+  {
+    "id": 1063,
+    "name": "Iron Valiant",
+    "slug": "iron-valiant",
+    "confidence": "generic"
+  },
+  {
+    "id": 1065,
+    "name": "Miraidon",
+    "slug": "miraidon",
+    "confidence": "generic"
+  }
+]
