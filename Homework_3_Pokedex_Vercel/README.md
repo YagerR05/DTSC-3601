@@ -3,6 +3,8 @@ Homework 3 - Pokedex Web
 
 DTSC 3601
 
+**Live app:** https://pokedex-web-gamma-five.vercel.app
+
 A higher-quality, shadcn/ui-based rebuild of the Homework 1/2 Streamlit Pokedex Explorer, built with
 Next.js (App Router) and deployed on Vercel. Reads the same public Supabase `pokemon` table
 (1065 Pokemon across all nine generations, including regional/Mega forms) as the Streamlit app.
