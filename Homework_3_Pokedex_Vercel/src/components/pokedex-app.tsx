@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { usePathname, useSearchParams } from "next/navigation";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { FilterBar } from "@/components/filters/filter-bar";
@@ -9,6 +9,8 @@ import { GenerationsTab } from "@/components/tabs/generations-tab";
 import { TypesTab } from "@/components/tabs/types-tab";
 import { CompareTab } from "@/components/tabs/compare-tab";
 import { ExploreTab } from "@/components/tabs/explore-tab";
+import { DoppelgangerTab } from "@/components/tabs/doppelganger-tab";
+import { TeamBuilderTab } from "@/components/tabs/team-builder-tab";
 import { applyFilters, useFilters } from "@/lib/filters";
 import { getCanonicalPokemon, groupBySpecies } from "@/lib/forms";
 import { LIST_URL_STORAGE_KEY } from "@/lib/list-url-memory";
@@ -18,6 +20,8 @@ export function PokedexApp({ pokemons }: { pokemons: Pokemon[] }) {
   const { filters } = useFilters();
   const pathname = usePathname();
   const searchParams = useSearchParams();
+  const [tab, setTab] = useState("explore");
+  const isToolTab = tab === "doppelganger" || tab === "team-builder";
 
   // Remembers the list page's current URL (filters and all) so the detail
   // page's Home button can jump straight back to it, even many form/prev-
@@ -58,21 +62,25 @@ export function PokedexApp({ pokemons }: { pokemons: Pokemon[] }) {
         </p>
       </header>
 
-      <div className="flex items-center justify-between gap-4">
-        <FilterBar />
-        <p className="shrink-0 text-sm text-muted-foreground">
-          <span className="font-medium text-foreground">{canonicalFiltered.length}</span> of{" "}
-          {canonicalAll.length} Pokemon match
-        </p>
-      </div>
+      {!isToolTab && (
+        <div className="flex items-center justify-between gap-4">
+          <FilterBar />
+          <p className="shrink-0 text-sm text-muted-foreground">
+            <span className="font-medium text-foreground">{canonicalFiltered.length}</span> of{" "}
+            {canonicalAll.length} Pokemon match
+          </p>
+        </div>
+      )}
 
-      <Tabs defaultValue="explore">
+      <Tabs value={tab} onValueChange={(value) => setTab(value as string)}>
         <TabsList>
           <TabsTrigger value="explore">Explore</TabsTrigger>
           <TabsTrigger value="overview">Overview</TabsTrigger>
           <TabsTrigger value="generations">Generations</TabsTrigger>
           <TabsTrigger value="types">Types</TabsTrigger>
           <TabsTrigger value="compare">Compare</TabsTrigger>
+          <TabsTrigger value="doppelganger">Doppelgänger</TabsTrigger>
+          <TabsTrigger value="team-builder">Team Builder</TabsTrigger>
         </TabsList>
         <TabsContent value="overview">
           <OverviewTab pokemons={canonicalFiltered} />
@@ -88,6 +96,12 @@ export function PokedexApp({ pokemons }: { pokemons: Pokemon[] }) {
         </TabsContent>
         <TabsContent value="explore">
           <ExploreTab pokemons={exploreFiltered} randomPool={randomPool} />
+        </TabsContent>
+        <TabsContent value="doppelganger">
+          <DoppelgangerTab />
+        </TabsContent>
+        <TabsContent value="team-builder">
+          <TeamBuilderTab pokemons={pokemons} />
         </TabsContent>
       </Tabs>
     </div>
