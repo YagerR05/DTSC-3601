@@ -69,6 +69,20 @@ class MatchResponse(BaseModel):
     matches: list[Match]
 
 
+@app.get("/")
+def root():
+    return {
+        "service": "Pokedex Doppelganger API",
+        "status": "ok" if _bundle is not None else "artifact not loaded",
+        "docs": "/docs",
+        "endpoints": {
+            "GET /health": "liveness check",
+            "GET /info": "artifact metadata",
+            "POST /doppelganger": "stat query -> nearest-match Pokemon",
+        },
+    }
+
+
 @app.get("/health")
 def health():
     if _bundle is None:
