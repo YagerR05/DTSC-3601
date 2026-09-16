@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { usePathname, useSearchParams } from "next/navigation";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { FilterBar } from "@/components/filters/filter-bar";
@@ -14,13 +14,16 @@ import { TeamBuilderTab } from "@/components/tabs/team-builder-tab";
 import { applyFilters, useFilters } from "@/lib/filters";
 import { getCanonicalPokemon, groupBySpecies } from "@/lib/forms";
 import { LIST_URL_STORAGE_KEY } from "@/lib/list-url-memory";
+import { useSessionState } from "@/lib/use-session-state";
 import type { Pokemon } from "@/lib/types";
 
 export function PokedexApp({ pokemons }: { pokemons: Pokemon[] }) {
   const { filters } = useFilters();
   const pathname = usePathname();
   const searchParams = useSearchParams();
-  const [tab, setTab] = useState("explore");
+  // Persisted so that navigating to a Pokemon's Summary page and back
+  // (or hitting Home) returns to the tab you were on, not always Explore.
+  const [tab, setTab] = useSessionState("pokedexActiveTab", "explore");
   const isToolTab = tab === "doppelganger" || tab === "team-builder";
 
   // Remembers the list page's current URL (filters and all) so the detail

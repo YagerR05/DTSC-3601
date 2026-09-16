@@ -11,6 +11,7 @@ import { TypeBadge } from "@/components/type-badge";
 import { StatRadarChart, type RadarSeries } from "@/components/charts/stat-radar";
 import { STAT_LABELS } from "@/lib/types";
 import { findDoppelganger, MlApiError, type DoppelgangerMatch, type StatQuery } from "@/lib/ml-api";
+import { useSessionState } from "@/lib/use-session-state";
 
 const STAT_FIELDS: { key: keyof Omit<StatQuery, "k">; label: string }[] = [
   { key: "hp", label: STAT_LABELS.hp },
@@ -43,12 +44,14 @@ function matchToRadarSeries(m: DoppelgangerMatch): RadarSeries {
 }
 
 export function DoppelgangerTab() {
-  const [stats, setStats] = useState(DEFAULT_STATS);
-  const [k, setK] = useState(5);
-  const [matches, setMatches] = useState<DoppelgangerMatch[] | null>(null);
+  // Persisted so clicking a match's Summary link and coming back (or
+  // hitting Home) doesn't lose your query or results.
+  const [stats, setStats] = useSessionState("doppelgangerStats", DEFAULT_STATS);
+  const [k, setK] = useSessionState("doppelgangerK", 5);
+  const [matches, setMatches] = useSessionState<DoppelgangerMatch[] | null>("doppelgangerMatches", null);
+  const [overlayId, setOverlayId] = useSessionState<number | null>("doppelgangerOverlayId", null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
-  const [overlayId, setOverlayId] = useState<number | null>(null);
 
   function updateStat(key: keyof Omit<StatQuery, "k">, value: string) {
     const n = Number(value);

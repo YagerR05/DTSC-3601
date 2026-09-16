@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, type FormEvent } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -11,23 +11,65 @@ import { PokemonSprite } from "@/components/pokemon-sprite";
 import { TypeBadge } from "@/components/type-badge";
 import { Input } from "@/components/ui/input";
 import { Badge } from "@/components/ui/badge";
+import { TeamDefensiveCoverage } from "@/components/team-defensive-coverage";
 import { recommendTeam, MlApiError, type SlotRecommendation } from "@/lib/ml-api";
+import { useSessionState } from "@/lib/use-session-state";
 import type { Pokemon } from "@/lib/types";
 
-const MAX_TEAM = 5;
+const FULL_TEAM_SIZE = 6;
 
 export function TeamBuilderTab({ pokemons }: { pokemons: Pokemon[] }) {
   const sorted = [...pokemons].sort((a, b) => a.pokedexNumber - b.pokedexNumber || a.name.localeCompare(b.name));
 
-  const [teamIds, setTeamIds] = useState<number[]>([]);
-  const [optionsPerSlot, setOptionsPerSlot] = useState(3);
-  const [includeLegendaries, setIncludeLegendaries] = useState(false);
-  const [includeNotFullyEvolved, setIncludeNotFullyEvolved] = useState(false);
-  const [slots, setSlots] = useState<SlotRecommendation[] | null>(null);
+  // Persisted so clicking a recommendation's Summary link and coming back
+  // (or hitting Home) returns to the same in-progress team, not a blank tab.
+  const [teamIds, setTeamIds] = useSessionState<number[]>("teamBuilderTeamIds", []);
+  const [optionsPerSlot, setOptionsPerSlot] = useSessionState("teamBuilderOptionsPerSlot", 3);
+  const [includeLegendaries, setIncludeLegendaries] = useSessionState("teamBuilderIncludeLegendaries", false);
+  const [includeNotFullyEvolved, setIncludeNotFullyEvolved] = useSessionState(
+    "teamBuilderIncludeNotFullyEvolved",
+    false
+  );
+  const [slots, setSlots] = useSessionState<SlotRecommendation[] | null>("teamBuilderSlots", null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
   const team = teamIds.map((id) => sorted.find((p) => p.id === id)).filter((p): p is Pokemon => !!p);
+  const isFullTeam = teamIds.length >= FULL_TEAM_SIZE;
+
+  // Auto re-searches any time the team or filters change, so picking from
+  // the picker, clicking "Add to team" on a recommendation, or flipping a
+  // filter all just update the results - no separate submit step.
+  useEffect(() => {
+    if (teamIds.length === 0 || isFullTeam) {
+      setSlots(null);
+      return;
+    }
+    let cancelled = false;
+    setLoading(true);
+    setError(null);
+    recommendTeam({
+      team: teamIds,
+      options_per_slot: optionsPerSlot,
+      include_legendaries: includeLegendaries,
+      include_not_fully_evolved: includeNotFullyEvolved,
+    })
+      .then((res) => {
+        if (!cancelled) setSlots(res.slots);
+      })
+      .catch((err) => {
+        if (cancelled) return;
+        setSlots(null);
+        setError(err instanceof MlApiError ? err.message : "Couldn't reach the Team Builder API.");
+      })
+      .finally(() => {
+        if (!cancelled) setLoading(false);
+      });
+    return () => {
+      cancelled = true;
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [teamIds.join(","), optionsPerSlot, includeLegendaries, includeNotFullyEvolved, isFullTeam]);
 
   function handleClear() {
     setTeamIds([]);
@@ -35,25 +77,8 @@ export function TeamBuilderTab({ pokemons }: { pokemons: Pokemon[] }) {
     setError(null);
   }
 
-  async function handleSubmit(e: FormEvent) {
-    e.preventDefault();
-    if (teamIds.length === 0) return;
-    setLoading(true);
-    setError(null);
-    try {
-      const res = await recommendTeam({
-        team: teamIds,
-        options_per_slot: optionsPerSlot,
-        include_legendaries: includeLegendaries,
-        include_not_fully_evolved: includeNotFullyEvolved,
-      });
-      setSlots(res.slots);
-    } catch (err) {
-      setSlots(null);
-      setError(err instanceof MlApiError ? err.message : "Couldn't reach the Team Builder API.");
-    } finally {
-      setLoading(false);
-    }
+  function addToTeam(id: number) {
+    setTeamIds((prev) => (prev.includes(id) || prev.length >= FULL_TEAM_SIZE ? prev : [...prev, id]));
   }
 
   return (
@@ -62,8 +87,9 @@ export function TeamBuilderTab({ pokemons }: { pokemons: Pokemon[] }) {
         <CardHeader>
           <CardTitle>Team Builder</CardTitle>
           <p className="text-sm text-muted-foreground">
-            Pick 1-5 Pokemon already on your team and get recommended teammates for each remaining
-            slot - a random forest trained on synthetic team-fit examples, running live on{" "}
+            Pick 1-5 Pokemon already on your team (or add them one at a time from the suggestions
+            below) and get recommended teammates for each remaining slot - a random forest trained
+            on synthetic team-fit examples, running live on{" "}
             <a
               href="https://yagerr05--pokedex-doppelganger-fastapi-app.modal.run/docs"
               target="_blank"
@@ -77,16 +103,16 @@ export function TeamBuilderTab({ pokemons }: { pokemons: Pokemon[] }) {
           </p>
         </CardHeader>
         <CardContent>
-          <form onSubmit={handleSubmit} className="space-y-4">
+          <div className="space-y-4">
             <div className="flex flex-wrap items-end gap-4">
               <div className="space-y-1.5">
                 <Label>Your team</Label>
                 <PokemonPicker
-                  title="Pick up to 5 Pokemon"
+                  title="Pick up to 6 Pokemon"
                   pokemons={sorted}
                   selectedIds={teamIds}
                   onChange={setTeamIds}
-                  max={MAX_TEAM}
+                  max={FULL_TEAM_SIZE}
                 />
               </div>
               <div className="space-y-1.5">
@@ -101,12 +127,10 @@ export function TeamBuilderTab({ pokemons }: { pokemons: Pokemon[] }) {
                   className="w-20"
                 />
               </div>
-              <Button type="submit" disabled={loading || teamIds.length === 0}>
-                {loading ? "Building..." : "Recommend Teammates"}
-              </Button>
               <Button type="button" variant="outline" onClick={handleClear} disabled={teamIds.length === 0}>
                 Clear selections
               </Button>
+              {loading && <span className="text-sm text-muted-foreground">Updating recommendations...</span>}
             </div>
 
             <div className="flex flex-wrap gap-6">
@@ -137,46 +161,62 @@ export function TeamBuilderTab({ pokemons }: { pokemons: Pokemon[] }) {
             )}
 
             {error && <p className="text-sm text-destructive">{error}</p>}
-          </form>
+          </div>
         </CardContent>
       </Card>
 
-      {slots && slots.length === 0 && (
+      {isFullTeam && <TeamDefensiveCoverage team={team} />}
+
+      {!isFullTeam && slots && slots.length === 0 && (
         <p className="text-sm text-muted-foreground">
           No eligible Pokemon matched the current filters - try enabling one of the checkboxes above.
         </p>
       )}
 
-      {slots?.map((slot) => (
-        <div key={slot.position} className="space-y-3">
-          <h3 className="text-sm font-semibold text-muted-foreground">Team Member {slot.position}</h3>
-          <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
-            {slot.options.map((r, i) => (
-              <Card key={r.id}>
-                <CardContent className="flex items-center gap-3 py-4">
-                  <PokemonSprite id={r.id} name={r.name} pokedexNumber={r.pokedex_number} size={56} className="size-14 shrink-0" />
-                  <div className="min-w-0 flex-1 space-y-1">
-                    <div className="flex items-center gap-2">
-                      <p className="truncate font-medium">{r.name}</p>
-                      {i === 0 && <Badge variant="secondary">Best fit</Badge>}
+      {!isFullTeam && slots && slots.length > 0 && (
+        <p className="text-sm text-muted-foreground">
+          <span className="font-medium text-foreground">Fit score</span> reflects how much a pick
+          improves your team's overall type defense and stat balance - higher is better, roughly on
+          a 0-1 scale. It's not a percentage or a guaranteed win rate.
+        </p>
+      )}
+
+      {!isFullTeam &&
+        slots?.map((slot) => (
+          <div key={slot.position} className="space-y-3">
+            <h3 className="text-sm font-semibold text-muted-foreground">Team Member {slot.position}</h3>
+            <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
+              {slot.options.map((r, i) => (
+                <Card key={r.id}>
+                  <CardContent className="flex items-center gap-3 py-4">
+                    <PokemonSprite id={r.id} name={r.name} pokedexNumber={r.pokedex_number} size={56} className="size-14 shrink-0" />
+                    <div className="min-w-0 flex-1 space-y-1">
+                      <div className="flex items-center gap-2">
+                        <p className="truncate font-medium">{r.name}</p>
+                        {i === 0 && <Badge variant="secondary">Best fit</Badge>}
+                      </div>
+                      <div className="flex flex-wrap gap-1">
+                        <TypeBadge type={r.type1} />
+                        {r.type2 && <TypeBadge type={r.type2} />}
+                      </div>
+                      <p className="text-xs text-muted-foreground">
+                        Base total {r.base_total} · fit score {r.fit_score.toFixed(3)}
+                      </p>
+                      <div className="flex gap-2">
+                        <Button size="sm" onClick={() => addToTeam(r.id)} className="flex-1">
+                          Add to team
+                        </Button>
+                        <Button size="sm" variant="secondary" render={<Link href={`/pokemon/${r.id}`} />}>
+                          Summary
+                        </Button>
+                      </div>
                     </div>
-                    <div className="flex flex-wrap gap-1">
-                      <TypeBadge type={r.type1} />
-                      {r.type2 && <TypeBadge type={r.type2} />}
-                    </div>
-                    <p className="text-xs text-muted-foreground">
-                      Base total {r.base_total} · fit score {r.fit_score.toFixed(3)}
-                    </p>
-                    <Button size="sm" variant="secondary" render={<Link href={`/pokemon/${r.id}`} />}>
-                      Summary
-                    </Button>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
           </div>
-        </div>
-      ))}
+        ))}
     </div>
   );
 }
