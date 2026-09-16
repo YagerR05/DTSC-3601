@@ -197,9 +197,9 @@ def main():
             "name": "team-builder",
             "description": (
                 "Random forest trained on synthetic (partial team, candidate) -> fit-score "
-                "examples. A 'gap' is a type no current team member resists; a candidate is "
-                "scored on how many gaps it fills, minus a penalty for new unresisted "
-                "weaknesses it introduces, plus a physical/special balance term and a "
+                "examples. The label is the reduction in the team's aggregate type exposure "
+                "(a log2-scaled sum, per attacking type, of each member's defensive multiplier) "
+                "from adding the candidate, plus a physical/special balance term and a "
                 "first-Mega bonus. Legendary/evolution-stage filtering happens at request "
                 "time, not during training."
             ),

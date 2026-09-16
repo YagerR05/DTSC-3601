@@ -1,0 +1,186 @@
+{
+  "info": {
+    "name": "Pokedex ML API (Doppelgänger + Team Builder)",
+    "description": "Live Modal-hosted FastAPI service for Homework 4. All requests hit the deployed URL directly, not localhost.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    { "key": "baseUrl", "value": "https://yagerr05--pokedex-doppelganger-fastapi-app.modal.run" }
+  ],
+  "item": [
+    {
+      "name": "GET /health",
+      "request": {
+        "method": "GET",
+        "url": "{{baseUrl}}/health"
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('Status code is 200', () => pm.response.to.have.status(200));",
+              "pm.test('Body reports ok', () => {",
+              "  const json = pm.response.json();",
+              "  pm.expect(json.status).to.eql('ok');",
+              "});"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "GET /info (Doppelganger metadata)",
+      "request": {
+        "method": "GET",
+        "url": "{{baseUrl}}/info"
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('Status code is 200', () => pm.response.to.have.status(200));",
+              "pm.test('Metadata has expected fields', () => {",
+              "  const json = pm.response.json();",
+              "  pm.expect(json).to.have.property('sklearn_version');",
+              "  pm.expect(json).to.have.property('steps');",
+              "  pm.expect(json.name).to.eql('doppelganger');",
+              "});"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "GET /team/info (Team Builder metadata)",
+      "request": {
+        "method": "GET",
+        "url": "{{baseUrl}}/team/info"
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('Status code is 200', () => pm.response.to.have.status(200));",
+              "pm.test('Metadata has expected fields', () => {",
+              "  const json = pm.response.json();",
+              "  pm.expect(json).to.have.property('sklearn_version');",
+              "  pm.expect(json).to.have.property('train_r2');",
+              "  pm.expect(json.name).to.eql('team-builder');",
+              "});"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "POST /doppelganger (valid -> 200)",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "url": "{{baseUrl}}/doppelganger",
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"hp\": 78,\n  \"attack\": 84,\n  \"defense\": 78,\n  \"sp_attack\": 109,\n  \"sp_defense\": 85,\n  \"speed\": 100,\n  \"k\": 5\n}"
+        }
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('Status code is 200', () => pm.response.to.have.status(200));",
+              "pm.test('Returns matches with distance', () => {",
+              "  const json = pm.response.json();",
+              "  pm.expect(json.matches).to.be.an('array').that.is.not.empty;",
+              "  pm.expect(json.matches[0]).to.have.property('distance');",
+              "  pm.expect(json.matches[0].distance).to.be.a('number');",
+              "});"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "POST /doppelganger (invalid -> 422)",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "url": "{{baseUrl}}/doppelganger",
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"hp\": 9999,\n  \"attack\": 84,\n  \"defense\": 78,\n  \"sp_attack\": 109,\n  \"sp_defense\": 85,\n  \"speed\": 100\n}"
+        }
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('Status code is 422 (hp out of 1-255 bounds)', () => pm.response.to.have.status(422));"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "POST /team/recommend (valid -> 200)",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "url": "{{baseUrl}}/team/recommend",
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"team\": [489, 1136, 869],\n  \"options_per_slot\": 3\n}"
+        }
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('Status code is 200', () => pm.response.to.have.status(200));",
+              "pm.test('Returns per-slot recommendation groups', () => {",
+              "  const json = pm.response.json();",
+              "  pm.expect(json.slots).to.be.an('array').that.is.not.empty;",
+              "  pm.expect(json.slots[0]).to.have.property('position');",
+              "  pm.expect(json.slots[0].options[0]).to.have.property('fit_score');",
+              "});"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "POST /team/recommend (invalid -> 422)",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "url": "{{baseUrl}}/team/recommend",
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"team\": []\n}"
+        }
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('Status code is 422 (team must have 1-5 ids)', () => pm.response.to.have.status(422));"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
