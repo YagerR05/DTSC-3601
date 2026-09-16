@@ -49,6 +49,12 @@ export type DoppelgangerMatch = {
   type2: string | null;
   is_legendary: boolean;
   base_total: number;
+  hp: number;
+  attack: number;
+  defense: number;
+  sp_attack: number;
+  sp_defense: number;
+  speed: number;
   distance: number;
 };
 
@@ -69,7 +75,7 @@ export type TeamMember = {
   is_legendary: boolean;
 };
 
-export type TeamRecommendation = {
+export type SlotOption = {
   id: number;
   name: string;
   pokedex_number: number;
@@ -79,11 +85,23 @@ export type TeamRecommendation = {
   fit_score: number;
 };
 
-export type TeamResponse = {
-  team: TeamMember[];
-  recommendations: TeamRecommendation[];
+export type SlotRecommendation = {
+  position: number;
+  options: SlotOption[];
 };
 
-export function recommendTeam(team: number[], k: number) {
-  return postJson<TeamResponse>("/team/recommend", { team, k });
+export type TeamResponse = {
+  team: TeamMember[];
+  slots: SlotRecommendation[];
+};
+
+export type TeamRequest = {
+  team: number[];
+  options_per_slot: number;
+  include_legendaries: boolean;
+  include_not_fully_evolved: boolean;
+};
+
+export function recommendTeam(request: TeamRequest) {
+  return postJson<TeamResponse>("/team/recommend", request);
 }

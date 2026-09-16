@@ -15,8 +15,16 @@ import {
   ChartTooltipContent,
   type ChartConfig,
 } from "@/components/ui/chart";
-import { STAT_COLS, STAT_LABELS, type Pokemon } from "@/lib/types";
+import { STAT_LABELS, type StatCol } from "@/lib/types";
 import { CATEGORICAL } from "@/lib/chart-theme";
+
+// Matches the in-game summary screen's hexagon: HP at the top, then
+// clockwise through Attack, Defense, Speed, Sp. Defense, Sp. Attack.
+const RADAR_STAT_ORDER: StatCol[] = ["hp", "attack", "defense", "speed", "spDefense", "spAttack"];
+
+// Narrower than the full Pokemon type so callers can plot a live-typed
+// stat query or an API match that doesn't carry every Pokemon field.
+export type RadarSeries = { name: string } & Record<StatCol, number>;
 
 // Use index-based series keys (p0, p1, ...) rather than raw Pokemon names —
 // names can contain spaces/punctuation that aren't valid CSS custom
@@ -25,12 +33,12 @@ export function StatRadarChart({
   pokemons,
   className,
 }: {
-  pokemons: Pokemon[];
+  pokemons: RadarSeries[];
   className?: string;
 }) {
   const seriesKeys = pokemons.map((_, i) => `p${i}`);
 
-  const data = STAT_COLS.map((stat) => {
+  const data = RADAR_STAT_ORDER.map((stat) => {
     const row: Record<string, string | number> = { stat: STAT_LABELS[stat] };
     pokemons.forEach((p, i) => {
       row[seriesKeys[i]] = p[stat];

@@ -3,8 +3,9 @@ importable under this exact module name wherever the fitted bundle is
 unpickled (local dev, FastAPI, and inside the Modal image).
 """
 
+import math
+
 import numpy as np
-import pandas as pd
 from sklearn.base import BaseEstimator, TransformerMixin
 
 ATTACK_TYPES = [
@@ -14,8 +15,8 @@ ATTACK_TYPES = [
 ]
 
 FEATURE_NAMES = (
-    [f"team_against_{t}" for t in ATTACK_TYPES]
-    + [f"candidate_against_{t}" for t in ATTACK_TYPES]
+    [f"team_exposure_{t}" for t in ATTACK_TYPES]
+    + [f"candidate_type_score_{t}" for t in ATTACK_TYPES]
     + [
         "team_physical_share", "candidate_physical_share", "team_size",
         "candidate_is_mega", "team_has_mega", "candidate_base_total",
@@ -23,15 +24,24 @@ FEATURE_NAMES = (
 )
 
 
+def _type_score(against: float) -> float:
+    """log2-scaled defensive multiplier: resist -> negative, weak -> positive,
+    matching the label formula in build_team_builder.py exactly - so the
+    forest is given the same representation the labels were computed from,
+    rather than having to reconstruct a log-scaled sum from raw averages."""
+    if against <= 0:
+        return -2.0
+    return math.log2(against)
+
+
 class TeamContextFeaturizer(BaseEstimator, TransformerMixin):
     """Aggregates a variable-length team (1-5 Pokemon) plus one candidate
     Pokemon into a fixed-size numeric feature vector, regardless of team
     size, so a downstream model can score how well the candidate fits the
-    team so far. The variable-length aggregation (mean type-weakness
-    across however many team members there are, whether *any* team member
-    already covers a type, etc.) is the actual work this transformer does -
-    a plain column selector wouldn't handle a team of 1 and a team of 5
-    the same way.
+    team so far. `team_exposure_<type>` is the sum (not average) of each
+    member's log2 type score for that attacking type - summing rather than
+    averaging is what lets the model see a type multiple team members are
+    weak to as worse than one, even if a third member happens to resist it.
 
     Expects an iterable of dicts, each with keys:
       "team": list of 1-5 Pokemon dicts (each with against_<type> for all
@@ -55,8 +65,8 @@ class TeamContextFeaturizer(BaseEstimator, TransformerMixin):
             cand = row["candidate"]
             n = len(team)
 
-            team_against = [float(np.mean([m[f"against_{t}"] for m in team])) for t in types]
-            cand_against = [float(cand[f"against_{t}"]) for t in types]
+            team_exposure = [sum(_type_score(m[f"against_{t}"]) for m in team) for t in types]
+            cand_type_score = [_type_score(cand[f"against_{t}"]) for t in types]
 
             team_atk_total = sum(m["attack"] for m in team)
             team_spa_total = sum(m["sp_attack"] for m in team)
@@ -65,7 +75,7 @@ class TeamContextFeaturizer(BaseEstimator, TransformerMixin):
 
             team_has_mega = float(any(m["is_mega"] for m in team))
 
-            out[i] = team_against + cand_against + [
+            out[i] = team_exposure + cand_type_score + [
                 team_physical_share,
                 cand_physical_share,
                 float(n),
