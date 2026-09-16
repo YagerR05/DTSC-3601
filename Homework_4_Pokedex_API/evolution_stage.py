@@ -28,7 +28,7 @@ CACHE_PATH = Path(__file__).parent / "evolution_stage_cache.json"
 # Exact `name` values from the `pokemon` table whose evolvability differs
 # from their species' ordinary forms. True = treat as a final evolution.
 FINAL_EVOLUTION_OVERRIDES: dict[str, bool] = {
-    "Floette Eternal": True,
+    "Eternal Flower Floette": True,
 }
 
 
@@ -93,7 +93,7 @@ if __name__ == "__main__":
         ("Eevee", 133, False),
         ("Tauros", 128, False),
         ("Floette", 670, False),
-        ("Floette Eternal", 670, False),
+        ("Eternal Flower Floette", 670, False),
         ("Florges", 671, False),
         ("Mega Charizard X", 6, True),
     ]
